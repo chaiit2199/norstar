@@ -833,6 +833,166 @@ input[type="color"]::placeholder {
 }
 
 .is_dark {   
+    &.home19 {
+        background-color: $bg_2;
+
+        #contact .tf-button {
+            border-color: #3BBB67;
+            background-color: #3BBB67;
+            color: $white;
+        }
+        .contact-inner {
+            background-color: $bg_2;
+            border-color: $white;
+        }
+        .tf-section .pricing-box {
+            background-color: $bg_2;
+            border-color: $white;
+            &::before {
+                background-color: $white;
+            }
+            .time span,
+            h5 {
+                color: $white;
+            }
+            ul {
+                border-color: $white;
+            }
+            ul li span {
+                color: $txt-color;
+            }
+            .link {
+                border-color: $white;
+                color: $white;
+            }
+            &:hover, &.active {
+                background-color: #3BBB67;
+                ul li span {
+                    color: $white;
+                }
+                .link {
+                    border-color: $bg_2;
+                }
+            }
+        }
+        .swiper-pagination.style2 span {
+            background-color: $white !important;
+            &::after {
+                border-color: $white;
+            }
+        }
+        .wrapper_portfolio .box .image .button {
+            background-color: #3BBB67;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color: $bg_2;
+            }
+        }
+        .wrapper_service .box {
+            background-color: $bg_2;
+            border-color: $white;
+            &::before {
+                background-color: $white;
+            }
+            h5,
+            p {
+                @include transition3;
+            }
+            &.active,
+            &:hover {
+                background-color: #3BBB67;
+                h5,
+                p {
+                    color: $bg_2 !important;
+                }
+            }
+        }
+
+        .list_contact > li p:nth-child(2),
+        .tf-brand .desc,
+        .testimonials-box .sub,
+        .testimonials-box .inner .content h5,
+        .wrapper_portfolio .box .content h5,
+        .wrapper_service .box h5,
+        .wrapper_service .box p,
+        .my_skill_box .content-progress-box .progress-title-holder span,
+        .my_skill .title,
+        .resume-wrap .box ul li h5,
+        .resume-wrap .box h4,
+        .tf-title .title,
+        .number-content {
+            color: $white !important;
+        }
+        .resume-wrap .box ul li::before {
+            background-color: $bg_2;
+            border-color: $white;
+        }
+        .testimonials-box {
+            background-color: $bg_2;
+            border-color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+        .my_skill_box .content-progress-box .progress-content-outter,
+        .resume-wrap .box ul::before {
+            background-color: $white;
+        }
+        .resume-wrap .box ul li {
+            &.active,
+            &:hover {
+                h5 {
+                    color: #3BBB67 !important;
+                }
+            }
+        }
+        
+        p {
+            color: $txt-color !important;
+        }
+        .header #main-nav .menu li {
+            a {
+                color: $white;
+            }
+            &.menu-item-has-children > a {
+                &::after {
+                    color: $white;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+        } 
+        .page-title.style11 {
+            background: linear-gradient(8.36deg, rgba(45, 37, 4, 0) 5.56%, #352B00 93.18%);
+        }
+        .page-title.style11 .content-box {
+            .content .button-wrapper .button-style {
+                .btn-main {
+                    background-color: #3BBB67;
+                }
+                .btn-absolute {
+                    background-color: $white;
+                }
+            }
+            .image-box .box .content {
+                background-color: $bg_2;
+                border-color: $white;
+                box-shadow: 6px 6px 0px $white;
+                &::before {
+                    display: none;
+                }
+                .number-content,
+                .desc {
+                    color: $white !important;
+                }
+            }
+        }
+        .page-title.style11 .content-box .content .sub-title {
+            color: $white !important;
+        }
+    }
     &.home18 {  
         #footer ul li a {
             color: $txt-color;

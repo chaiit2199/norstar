@@ -11,6 +11,10 @@
 @include res1600 {  
 }
 @include res1440 { 
+    .page-title.style11 .content-box .image-box .box.position_1 {
+        right: 0;
+        top: -20px;
+    }
     .home18 .dashboard-style2 .article-dashboard {
         padding: 0px 15px 0 ;
     }
@@ -234,6 +238,25 @@
 }
 
 @include res991 {
+    .home19 .list_contact {
+        flex-wrap: wrap;
+        > li {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 50%;
+            }
+            &:nth-child(3) { 
+                width: 100%;
+            }
+            ul {
+               justify-content: flex-start;
+            }
+        }
+    }
     .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner {
         .flat-tabs {
             margin-top: 30px;
@@ -608,6 +631,39 @@
 }
 
 @include res767 {
+    .home19 {
+        .swiper-dark {
+            display: block;
+        }
+        .swiper-light {
+            display: none;
+        }
+    }
+    .home19 .list_contact {
+        flex-wrap: wrap;
+        > li {
+            width: 100% !important;
+        }
+    }
+    .home19 .contact-inner {
+        padding: 30px 16px;
+    }
+    .page-title.style11 {
+        padding: 120px 0 100px;
+        .content-box {
+            flex-wrap: wrap;
+            .content ,
+            .image-box {
+                width: 100%;
+                margin: 0;
+            }
+            .content {
+                margin-bottom: 50px;
+                padding: 0;
+            }
+        }
+
+    }
     .home18 #footer {
         justify-content: center;
         flex-wrap: wrap;
@@ -1386,11 +1442,54 @@
         }
 
     }
-
+    .home19 .tf-section .pricing-box {
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .home19 .wrapper_portfolio,
+    .home19 .wrapper_service {
+        flex-wrap: wrap;
+        .box {
+            width: 100%;
+        }
+    } 
+    .home19 .wrapper_portfolio .box {
+        .content {
+            h5 {
+                margin-top: 20px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        padding-top: 0 !important;
+        margin-bottom: 40px;
+    }
+    .home19 .tf-brand {
+        padding-bottom: 0;
+    }
 }
 
 
 @include res600 {
+    .home19 .my_skill_box {
+        flex-wrap: wrap;
+        .content-progress-box {
+            width: 100%;
+        }
+    }
+    .home19 .resume-wrap {
+        flex-wrap: wrap;
+        .box {
+            width: 100%;
+            h4 {
+                margin-bottom: 30px;
+            }
+        }
+    }
     .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .counter_wrapper .box {
         width: 100%;
     }

@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
 
 </head>
-<body class="body header-fixed main home17">
+<body class="body header-fixed main counter-scroll home17">
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
@@ -626,50 +626,50 @@
     <script src="app/js/animation_heading.js"></script>
     <script src="app/js/donatProgress.js"></script> 
     <script>
-    function updateCurvedText($curvedText, radius) {
-        $curvedText.css("min-width", "initial");
-        $curvedText.css("min-height", "initial");
-        var w = $curvedText.width(),
-            h = $curvedText.height();
-        $curvedText.css("min-width", w + "px");
-        $curvedText.css("min-height", h + "px");
-        var text = $curvedText.text();
-        var html = "";
+        function updateCurvedText($curvedText, radius) {
+            $curvedText.css("min-width", "initial");
+            $curvedText.css("min-height", "initial");
+            var w = $curvedText.width(),
+                h = $curvedText.height();
+            $curvedText.css("min-width", w + "px");
+            $curvedText.css("min-height", h + "px");
+            var text = $curvedText.text();
+            var html = "";
+            
+            Array.from(text).forEach(function (letter) {
+                html += `<span>${letter}</span>`;
+            });
+            $curvedText.html(html);
+            
+            var $letters = $curvedText.find("span");
+            $letters.css({
+                position: "absolute",
+                height:`${radius}px`,
+                // backgroundColor:"orange",
+                transformOrigin:"bottom center"
+            });
+            
+            var circleLength = 2 * Math.PI * radius;
+            var angleRad = w/(2*radius);
+            var angle = 2 * angleRad * 180/Math.PI/text.length;
         
-        Array.from(text).forEach(function (letter) {
-            html += `<span>${letter}</span>`;
-        });
-        $curvedText.html(html);
-        
-        var $letters = $curvedText.find("span");
-        $letters.css({
-            position: "absolute",
-            height:`${radius}px`,
-            // backgroundColor:"orange",
-            transformOrigin:"bottom center"
-        });
-        
-        var circleLength = 2 * Math.PI * radius;
-        var angleRad = w/(2*radius);
-        var angle = 2 * angleRad * 180/Math.PI/text.length;
-    
-        $letters.each(function(idx,el){
-            $(el).css({
-                transform:`translate(${w/2}px,0px) rotate(${idx * angle - text.length*angle/2}deg)`
-            })
-        });
-    }
+            $letters.each(function(idx,el){
+                $(el).css({
+                    transform:`translate(${w/2}px,0px) rotate(${idx * angle - text.length*angle/2}deg)`
+                })
+            });
+        }
  
-    var $curvedText = $(".curved-text");
-    updateCurvedText($curvedText,500);
-    
-    function settingsChanged(){
-    $curvedText.text($(".text").val());
-    updateCurvedText($curvedText,$(".radius").val());
-    }
-    
-    $(".radius").on("input change",settingsChanged);
-    $(".text").on("input change",settingsChanged);
+        var $curvedText = $(".curved-text");
+        updateCurvedText($curvedText,500);
+        
+        function settingsChanged(){
+        $curvedText.text($(".text").val());
+        updateCurvedText($curvedText,$(".radius").val());
+        }
+        
+        $(".radius").on("input change",settingsChanged);
+        $(".text").on("input change",settingsChanged);
     </script> 
     <script>
         var body_dashboard = function(value){

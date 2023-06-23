@@ -281,6 +281,9 @@ var swiper =  new Swiper(".sl-brand-7", {
     }
 }); 
 
+
+
+
 var swiper =  new Swiper(".sl-brand-8", {
     slidesPerView: 1,
     loop: false, 
@@ -341,6 +344,38 @@ var swiper =  new Swiper(".sl-brand-9", {
         1280: {
             slidesPerView: 4,
             spaceBetween: 2,
+        },
+    }
+}); 
+
+var swiper =  new Swiper(".sl-brand-10", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 0,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+        991: {
+            slidesPerView: 5,
+            spaceBetween: 0,
+        },
+        1280: {
+            slidesPerView: 5,
+            spaceBetween: 0,
         },
     }
 }); 
