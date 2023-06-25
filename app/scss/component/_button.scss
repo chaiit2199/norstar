@@ -8,6 +8,10 @@ $spacing-2: 50px;
 $hover-size: $spacing-2 * 2 - $border * 2;
 $hover-margin: -($spacing-2 - 2);
 
+$spacing-3: 70px; 
+$hover-size: $spacing-3 * 2 - $border * 2;
+$hover-margin: -($spacing-3 - 2);
+
 .button {
     width: $spacing * 2;
     height: $spacing * 2;
@@ -23,6 +27,17 @@ $hover-margin: -($spacing-2 - 2);
     &.style-2 {
         width: $spacing-2 * 2;
         height: $spacing-2 * 2; 
+        &.hover-circle { 
+            &:hover {
+                span {
+                    color: $bg_6;
+                }
+            }
+        }
+    }
+    &.style-3 {
+        width: $spacing-3 * 2;
+        height: $spacing-3 * 2; 
         &.hover-circle { 
             &:hover {
                 span {

@@ -1,6 +1,6 @@
 @use './abstracts/' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Golos+Text:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Golos+Text:wght@400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 
 html {
     margin-right: 0 !important;
@@ -832,7 +832,149 @@ input[type="color"]::placeholder {
     }
 }
 
-.is_dark {   
+.is_dark {  
+    &.home25 {
+        background-color: $bg_2;
+        .tf-project .box .content .position {
+            background-color: $white;
+            color: $bg_2;
+        }
+        .tf-project .box .content h3,
+        .page-title.style15 .content-box ul li p:nth-child(2),
+        .page-title.style15 .content-box .content .title,
+        .page-title.style15 .content-box .content h5 {
+            color: $white;
+        }
+        .page-title.style15 .content-box .content .sub-title {
+            color: $txt-color;
+        }
+    }
+    &.home24 {
+        background-color: $bg_2;
+        .page-title.style14 .content-box .info h5,
+        .page-title.style14 .content-box .info .mail_to,
+        .page-title.style14 .content-box .content .sub-title,
+        .page-title.style14 .content-box .info .social li a,
+        .page-title.style14 .content-box .content .title {
+            color: $white;
+        }
+      
+        .page-title.style14 .content-box .info .social li a {
+            border-color: $txt-color;
+        }
+        .header #main-nav .menu li {
+            a {
+                color: $white;
+            }
+            &.menu-item-has-children > a {
+                &::after {
+                    color: $white;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+        } 
+    }
+    &.home23 {
+        #footer .footer-content .copyright {
+            color: $txt-color !important;
+        }
+        .flat-tabs .menu-tab li span,
+        .page-title.style13 .content-box .content .sub-title,
+        .page-title.style13 .content-box .content h5,
+        .page-title.style13 .content-box .content .title {
+            color: $white;
+        }
+        .flat-tabs .menu-tab li:hover,
+        .flat-tabs .menu-tab li.active {
+            background-color: $white;
+            span {
+                color: $bg_2;
+            }
+        }
+        background-color: $bg_2;
+        .flat-tabs,
+        .flat-tabs .content-tab,
+        .flat-tabs .menu-tab li,
+        .header,
+        .page-title.style13 {
+            border-color: $txt-color;
+        }
+        .header #main-nav .menu li {
+            a {
+                color: $white;
+            }
+            &.menu-item-has-children > a {
+                &::after {
+                    color: $white;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+        } 
+    } 
+    &.home22 {
+        background-color: $bg_2;
+        #footer {
+            .footer-contact {
+                p {
+                    color: $txt-color;
+                }
+                a {
+                    color: $white;
+                }
+            }
+            textarea,
+            input {
+                border-color: $white;
+                color: $white !important;
+                &::placeholder {
+                    color: $txt-color !important;
+                }
+            }
+        }
+        .wapper_service .box .image img {
+            display: none;
+            &.img_dark {
+                display: block;
+            }
+        }
+        .tf-brand .desc,
+        .tf-testimonial .testimonials-box .inner .content h5,
+        .tf-testimonial .testimonials-box h4,
+        .flat-tabs .content-tab .content-inner .box .content h5,
+        .wapper_service .box h5,
+        .counter_wrapper .box .content .box-couter .number-content,
+        .page-title.style12 .content-box .content .title,
+        .page-title.style12 .content-box .content .sub-title,
+        .page-title.style12 .content-box .content h5,
+        h1,h2,h3,h4,h5 {
+            color: $white;
+        } 
+        .tf-testimonial .btn-testimonials {
+            border-color: $white;
+            i {
+                color: $white;
+            }
+        }
+        .tf-testimonial .testimonials-box .inner .content p,
+        .counter_wrapper .box .content .desc,
+        .page-title.style12 .content-box .content .desc {
+            color: $txt-color;
+        }
+        #footer .footer-content .copyright,
+        .color1 {
+            color: $txt-color !important;
+        }
+        .button-style .btn-absolute {
+            background-color: $white;
+        }
+        .button-style .btn-main {
+            border: none !important;
+        }
+    }
     &.home19 {
         background-color: $bg_2;
 

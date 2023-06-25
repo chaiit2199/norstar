@@ -14,6 +14,25 @@ var swiper =  new Swiper(".sl-testimonial", {
     },
 }); 
 
+
+var swiper =  new Swiper(".banner_26", {
+    slidesPerView: 1,
+    loop: true, 
+    spaceBetween: 0,
+    // autoplay: {
+    //     delay: 3000,
+    // }, 
+    speed: 2000,
+    navigation: {
+        nextEl: ".btn-next-testimonials",
+        prevEl: ".btn-prev-testimonials",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 
+
 var swiper =  new Swiper(".sl-testimonial-3", {
     slidesPerView: 1,
     loop: false, 
@@ -44,6 +63,38 @@ var swiper =  new Swiper(".sl-testimonial-3", {
             spaceBetween: 0,
         }
     }
+}); 
+
+var swiper =  new Swiper(".sl-testimonial-5", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 32,
+    navigation: {
+        nextEl: ".btn-next-testimonials",
+        prevEl: ".btn-prev-testimonials",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        750: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        991: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        1280: {
+            slidesPerView: 2,
+            spaceBetween: 64,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 }); 
 
 var swiper =  new Swiper(".sl-brand", {
@@ -416,6 +467,42 @@ var swiper =  new Swiper(".sl-project", {
     }
 }); 
 
+var swiper =  new Swiper(".sl-project-2", {
+    slidesPerView: 1,
+    loop: true, 
+    spaceBetween: 0,
+    autoplay: {
+        delay: 1,
+    }, 
+    speed: 2000,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        360: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        }, 
+        991: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        }, 
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        }, 
+    }
+}); 
+
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,
@@ -550,7 +637,41 @@ var swiper = new Swiper(".mySwiper3", {
 });
 
 
-
+var swiper = new Swiper(".mySwiper6", {
+    spaceBetween: 75,
+    grabCursor: true,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        400: {
+            slidesPerView: 2
+        },
+        600: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 3
+        },
+        1200: {
+            slidesPerView: 3
+        },
+    },
+    observer: true,
+    observeParents: true,
+    shortSwipes: false,
+    longSwipes: false,
+    allowTouchMove: true,
+    reverseDirection: true,
+    // autoplay: {
+    // delay: 0.3, 
+    // }, 
+    // autoplay:false,
+    freeMode: true, 
+    speed: 2000,
+    disableOnInteraction: true
+});
 
 
 

@@ -159,6 +159,8 @@
     top: 100%;
     left: 0;
     width: 320px;
+    max-height: 500px;
+    overflow-y: auto;
     background-color: $white;
     box-shadow: $box-shadow;
     border-radius: 2px;
