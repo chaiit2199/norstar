@@ -186,6 +186,12 @@
 }
 
 @include res1200 {
+    .home20 .feature_wrapper {
+        justify-content: space-between;
+        .box {
+            width: calc((100% - 30px) / 2);
+        }
+    }
     .home24 .header .main-nav {
         left: 25%;
     }
@@ -324,6 +330,10 @@
 }
 
 @include res991 {
+    .pd-0-20 {
+        padding: 0;
+    }
+
     .home26 .container {
         padding: 0 15px;
     }
@@ -806,6 +816,44 @@
 }
 
 @include res767 {
+    .home20 .tf-section.tf-blog {
+        padding-bottom: 40px !important;
+    }
+    .home20 {
+        .tf-post {
+            margin-bottom: 40px;
+        }
+    }
+    .page-title.style17 {
+        padding: 100px 0 80px;
+        .content-box {
+            display: block;
+            .content {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .image-box {
+                width: 100%;
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .home20 .feature_wrapper .box {
+        padding-top: 0 !important;
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+    }
     .home25 .tf-project .sl-project-2 {
         padding-right: 0;
     }

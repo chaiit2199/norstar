@@ -1476,14 +1476,14 @@
             background-size: cover;
         }
         background-color: transparent;
-        padding: 128px 0 122px;
+        padding: 165px 0 172px;
         .content-box {
             padding-right: 0;
             position: relative;
             @include flex(flex-start,flex-start);
             .content {
-                width: 50%;
-                padding-top: 0;
+                width: 52%;
+                padding-top: 44px;
                 h5 {
                     font-size: 14px;
                     font-family: $font-main-2;
@@ -1500,17 +1500,18 @@
                     font-weight: 600;
                     line-height: 60px;  
                     color: $bg_2;
-                    margin-bottom: 40px;
+                    margin-bottom: 28px;
                 }
                 .sub-title {
-                    margin-bottom: 50px;
+                    margin-bottom: 45px;
                     color: #111;
                     text-align: left;
                     font-size: 22px;
                     line-height: 36px;
                     font-size: 14px;
-                    font-family: 'League Spartan', sans-serif;
+                    // font-family: 'League Spartan', sans-serif;
                     line-height: 24px;
+                    font-family: "spartan-regular";
                 } 
                 .button-wrapper {
                     @include flex(center,flex-start);
@@ -1566,7 +1567,7 @@
             .image-box {
                 padding-top: 8px;
                 margin-left: 30px;
-                width: 50%;
+                width: 48%;
                 z-index: 99;
                 position: relative;
                 @include flex(flex-start,space-between); 
@@ -2692,13 +2693,84 @@
         background: #050712;
     }
     &.is_light {
+        #footer {
+            background-color: $bg_2;
+        }
+        .banner-style {
+            background: linear-gradient(40.04deg, rgba(130, 152, 67, 0.12) 0%, rgba(43, 164, 156, 0.12) 100%);
+        }
+        .flat-accordion.style2 .flat-toggle {
+            .toggle-title .title {
+                color: $bg_2;
+            }
+            .toggle-content {
+                border-top: 1px solid #E6E6E6;
+                p {
+                    color: $color_1;
+                }
+            }
+        }
+        .team-box {
+            background-color: $white;
+            .content .name {
+                color: $bg_2;
+            }
+        }
+        .roadmap-wrapper::before {
+            background-color: #E6E6E6;
+        }
+        .tf-team {
+            background-color: #F4F4F4;
+        }
         .roadmad-box {
             box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
             border-radius: 16px;
         }
+        .roadmad-box {
+            padding: 2px;
+            &::after {
+                border-radius: 18px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(40.04deg, #A7D22A 0%, #29F8EB 100%);
+                z-index: -1;
+                opacity: 0;
+                @include transition3;
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+            .content {
+                border: none;
+                background-color: $white;
+                ul li span,
+                .heading {
+                    color: $bg_2;
+                }
+                ul li span::before {
+                    background-color: $bg_2;
+                }
+                .icon {
+                    background: linear-gradient(40.04deg, #A7D22A 0%, #29F8EB 100%);
+                }
+            }
+        }
         .swiper .img-box {
             box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
-            border: 1px solid #FFFFFF;
+            border: 2px solid #FFFFFF;
+            @include transition3;
+            &::before {
+                display: none;
+            }
+            &:hover {
+                border-color: $color-hover;
+            }
         }
         .number-box-wrapper .number-box {
             .content {
@@ -2743,6 +2815,9 @@
     }
     
     .tf-section {
+        &.tf-team {
+            padding-bottom: 80px;
+        }
         &.tf-brand {
             padding: 20px 0 80px;
             position: relative;
@@ -2768,10 +2843,7 @@
             .container-fluid {
                 max-width: 1826px;
             }
-        }
-        &.faq {
-            padding-top: 95px;
-        }
+        } 
         &.tf-banner {
             padding-top: 70px;
         }
@@ -2784,6 +2856,11 @@
 .home12 {
     &.body {
         background-color: #000
+    }
+    .dashboard-style2 .article-dashboard {
+        background: #171717;
+        border: 1px solid #474747;
+        border-radius: 16px;
     }
 }
 .home13 {
@@ -5794,7 +5871,10 @@
     }
 }
 
-.home20 { 
+.home20 {
+    .header .main-nav {
+        left: 38.2%;
+    }
     .button-style.style3 {
         height: 60px;
         border-radius: 30px;
@@ -5809,9 +5889,10 @@
             text-transform: capitalize;
             @include flex(center,center);
             border-radius: 30px;
+            padding: 10px 28px;
 
             img {
-                margin-left: 6px;
+                margin-left: 7px;
             }
         }
     }
@@ -5821,7 +5902,7 @@
     .mySwiper6 {
         .box {
             .image {
-                margin-bottom: 24px;
+                margin-bottom: 30px;
                 img {
                     width: 100%;
                 }
@@ -5830,11 +5911,11 @@
                 text-align: center;
                 h5 {
                     font-size: 24px;
-                    line-height: 26p;
+                    line-height: 26px;
                     font-family: $font-main-2;
                     color: #111111;
                     font-weight: 600;
-                    margin-bottom: 8px;
+                    margin-bottom: 4px;
                 }
                 p {
                     font-family: $font-main-2;
@@ -5853,7 +5934,7 @@
         .footer_content {
             text-align: center;
             .footer__logo {
-                margin-bottom: 24px;
+                margin-bottom: 8px;
             }
             p {
                 font-family: $font-main-2;
@@ -5861,17 +5942,21 @@
                 line-height: 35px;
                 font-weight: 600;
                 color: #000000;
+                margin-bottom: 6px;
             }
             .social {
                 @include flex(center,center);
                 li {
-                    margin: 0 10px;
+                    margin: 0 18px;
                 }
             }
         }
     }
 
     .tf-post {
+        .image {
+            margin-bottom: 21px;
+        }
         .content {
             @include flex(flex-start,flex-start);
             .date {
@@ -5880,14 +5965,20 @@
                 height: 31px;
                 background: url('./../../assets/images/common/bg_text.png') center center no-repeat;
                 background-size: contain;
+                margin-top: 6px;
+                text-transform: uppercase;
+                color: #5B5067;
             }
+           
             .title {
+                text-transform: inherit;
                 padding-left: 24px;
                 font-size: 22px;
                 line-height: 28px;
                 font-family: $font-main-2;
                 font-weight: 500;
                 color: #161616;
+                margin-bottom: 0;
             }
         }
     }
@@ -5910,6 +6001,8 @@
                 text-transform: capitalize;
                 @include flex(center,center);
                 border-radius: 30px;
+                padding: 10px 30px;
+                margin-top: -5px;
                 svg {
                     margin-left: 6px;
                     path {
@@ -5934,6 +6027,15 @@
     }
     .tf-section {
         padding: 90px 0;
+        &.tf-feature {
+            padding-bottom: 145px;
+        }
+        &.tf-artwork {
+            padding-top: 84px;
+        }
+        &.tf-blog {
+            padding: 86px 0 65px;
+        }
     }
     .tf-title {
         .title {
@@ -5957,7 +6059,7 @@
                     font-weight: 600;
                     font-family: $font-main-2;
                     color: $bg_2;
-                    margin-bottom: 16px;
+                    margin-bottom: 5px;
                 }
                 p {
                     font-size: 18px;
@@ -5965,7 +6067,7 @@
                     color: #828282;
                     span {
                         text-align: center;
-                        padding: 8px 20px;
+                        padding: 8px 26px 8px 20px;
                         margin-left: 4px;
                         background: url('./../../assets/images/common/bg_text.png') center center no-repeat;
                     }

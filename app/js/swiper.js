@@ -645,13 +645,14 @@ var swiper = new Swiper(".mySwiper6", {
         0: {
             slidesPerView: 1
         },
-        400: {
+        500: {
             slidesPerView: 2
         },
         600: {
-            slidesPerView: 3
+            slidesPerView: 2,
+            spaceBetween: 32
         },
-        991: {
+        900: {
             slidesPerView: 3
         },
         1200: {
@@ -744,10 +745,10 @@ var swiper = new Swiper(".mySwiper5", {
     shortSwipes: false,
     longSwipes: false,
     allowTouchMove: true,
-    autoplay: {
-    delay: 0.3, 
-    reverseDirection: true,
-    }, 
+    // autoplay: {
+    // delay: 0.3, 
+    // reverseDirection: true,
+    // }, 
     // autoplay:false,
     freeMode: true, 
     speed: 2200,

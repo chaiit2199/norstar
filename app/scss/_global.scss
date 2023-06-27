@@ -6,7 +6,13 @@ html {
     margin-right: 0 !important;
 }
 
-
+@font-face {
+    font-family: "spartan-regular";
+    src: url("../../assets/font/Spartan-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -832,7 +838,22 @@ input[type="color"]::placeholder {
     }
 }
 
+img.light {
+    display: block;
+}
+
+img.dark {
+    display: none;
+}
+
+
 .is_dark {  
+    img.light {
+        display: none;
+    }
+    img.dark {
+        display: block;
+    }
     &.home25 {
         background-color: $bg_2;
         .tf-project .box .content .position {
