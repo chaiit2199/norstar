@@ -3,6 +3,10 @@
   padding: 80px 0;
   background-color: #171717;
 }
+#footer .container {
+  z-index: 1;
+  position: relative;
+}
 #footer.style2 {
   padding-bottom: 40px;
   background-color: #FAF9F5;
@@ -72,6 +76,9 @@
 }
 #footer.style2 .cta .footer-form form fieldset.mb-52 {
   margin-bottom: 33px !important;
+}
+#footer.style2 .cta .footer-form form fieldset.mb-50 {
+  margin-bottom: 50px;
 }
 #footer.style2 .cta .content {
   padding-right: 15%;
@@ -223,6 +230,9 @@
 }
 #footer .footer-form form fieldset.mb-52 {
   margin-bottom: 52px;
+}
+#footer .footer-form form fieldset.mb-50 {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=footer.css.map */

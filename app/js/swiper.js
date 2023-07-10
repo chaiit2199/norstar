@@ -98,8 +98,18 @@ var swiper =  new Swiper(".sl-testimonial-5", {
 }); 
 
 var swiper =  new Swiper(".sl-brand", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
+    
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 12,
     breakpoints: {
         0: {
@@ -130,8 +140,18 @@ var swiper =  new Swiper(".sl-brand", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-2", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
+
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 60,
     breakpoints: {
         0: {
@@ -162,8 +182,17 @@ var swiper =  new Swiper(".sl-brand-2", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-3", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 10,
     breakpoints: {
         0: {
@@ -194,8 +223,17 @@ var swiper =  new Swiper(".sl-brand-3", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-4", {
-    slidesPerView: 1,
-    loop: false, 
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
+    slidesPerView: 1, 
     spaceBetween: 5,
     breakpoints: {
         0: {
@@ -226,14 +264,19 @@ var swiper =  new Swiper(".sl-brand-4", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-5", {
-    slidesPerView: 1,
-    loop: false, 
-    spaceBetween: 5,
-    grabCursor: false,
     loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
     autoplay: {
-        delay: 2,
-    }, 
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 5,
+    grabCursor: false, 
     speed: 2000,
     breakpoints: {
         0: {
@@ -264,14 +307,17 @@ var swiper =  new Swiper(".sl-brand-5", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-6", {
-    slidesPerView: 1,
     loop: true,
-    autoplay: {
-        delay: 2,
-        reverseDirection: true,
-
-    }, 
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
     speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
+    slidesPerView: 1,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -301,8 +347,17 @@ var swiper =  new Swiper(".sl-brand-6", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-7", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 10,
     breakpoints: {
         0: {
@@ -336,8 +391,17 @@ var swiper =  new Swiper(".sl-brand-7", {
 
 
 var swiper =  new Swiper(".sl-brand-8", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 2,
     breakpoints: {
         0: {
@@ -368,8 +432,16 @@ var swiper =  new Swiper(".sl-brand-8", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-9", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 2,
     breakpoints: {
         0: {
@@ -400,8 +472,17 @@ var swiper =  new Swiper(".sl-brand-9", {
 }); 
 
 var swiper =  new Swiper(".sl-brand-10", {
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false,
+    speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+
     slidesPerView: 1,
-    loop: false, 
     spaceBetween: 0,
     breakpoints: {
         0: {
@@ -760,3 +841,34 @@ var swiper = new Swiper(".mySwiper5", {
     }, function() {
         (this).swiper.autoplay.start();
     });
+
+    var roll_slider = new Swiper(".roll__slider", {
+        loop: true,
+        freemode: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        allowTouchMove: false,
+        speed: 2000,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+          },
+          800: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1300: {
+            slidesPerView: 5,
+          },
+          1900: {
+            slidesPerView: 8,
+          },
+        },
+      });

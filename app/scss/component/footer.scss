@@ -1,6 +1,10 @@
 @use '../abstracts/' as *;
 #footer { 
     position: relative;
+    .container {
+        z-index: 1;
+        position: relative;
+    }
     &.style2 {
         padding-bottom: 40px;
         background-color: $bg_7;
@@ -68,6 +72,9 @@
                     margin-bottom: 42px !important; 
                     &.mb-52 {
                         margin-bottom: 33px !important;
+                    }
+                    &.mb-50 {
+                        margin-bottom: 50px;
                     }
                 }
             }
@@ -230,6 +237,9 @@
                 margin-bottom: 60px;
                 &.mb-52{
                     margin-bottom: 52px;
+                }
+                &.mb-50 {
+                    margin-bottom: 50px;
                 }
             }
         }

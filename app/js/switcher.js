@@ -21,13 +21,13 @@ window.console =
 $(document).ready(function () {
   var e =
     '<div class="switcher-container">' +
-    '<h2>Style Selector<a href="#" class="sw-click"><img src="assets/images/common/settings1.png" class="setting"></img></a></h2>' +
+    '<h2>Setting<a href="#" class="sw-click"><img src="assets/images/icon/icon_setting.svg" class="setting setting_dark"></img><img src="assets/images/icon/icon_setting_white.svg" class="setting setting_light"></img></a></h2>' +
     '<div class="selector-box">' +
     '<div class="clearfix"></div>' +
-    '<div class="sw-odd"><h3>Color:</h3>' +
+    '<div class="sw-odd"><h3>Mode: <span class="light_mode">Light Mode</span><span class="dark_mode">Dark Mode</span></h3>' +
     '<div class="ws-colors">' +
-    '<a href="#" class="light sw-click"><img src="assets/images/common/sun.png"></img></a> ' + 
-    '<a href="#" class="dark sw-click"><img src="assets/images/common/moon.png"></img></a> '
+    '<a href="#" class="dark sw-click">Dark Mode</a> '+ 
+    '<a href="#" class="light sw-click is_active">Light Mode</a> ' 
     "</div></div>" + 
     '<div class="clearfix"></div>' +
     "</div>" +
@@ -36,6 +36,7 @@ $(document).ready(function () {
   switchAnimate.loadEvent();
   switchColor.loadEvent();
 });
+
 
 var switchColor = {
   colorObj: {
@@ -101,3 +102,5 @@ var switchAnimate = {
     });
   },
 };
+
+

@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
 </head>
-<body class="body header-fixed main counter-scroll home7">
+<body class="body header-fixed main home7">
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
@@ -24,15 +24,66 @@
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
-    <header id="header_main" class="header header-style2">
+    <header id="header_main" class="header header-style2 header-main-nav">
         <div class="container">
             <div id="site-header-inner">
                 <div class="header__logo">
                     <a href="Home-Agency-Digital.html"><img src="assets/images/logo/logo6.png" alt=""></a>
                 </div>  
-                <div class="btn-menu left-auto"><img src="./assets/images/icon/menu-icon.svg" alt=""></div>
+                <div class="btn-menu left-auto"><div class="mobile-button"><span></span></div></div>
             </div>
         </div>
+        <nav id="main-nav" class="main-nav">
+            <ul id="menu-primary-menu" class="menu">
+                <li class="menu-item menu-item-has-children  current-menu-item">
+                    <a href="#">Home</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="Home-Agency-Digital.html">Home-Agency-Digital</a></li>
+                        <li class="menu-item"><a href="Home-Agency-Creative.html">Home-Agency-Creative</a></li>
+                        <li class="menu-item"><a href="Home-Agency-Marketing.html">Home-Freelancer-Sale-Marketing</a></li>
+                        <li class="menu-item"><a href="Home-Designer.html">Home-Designer</a></li>
+                        <li class="menu-item"><a href="Home-StudioArt.html">Home-StudioArt</a></li>
+                        <li class="menu-item"><a href="Home-Designer-02.html">Home-Designer-02</a></li>
+                        <li class="menu-item current-item"><a href="Home-StudioArt-01.html">Home-StudioArt-01</a></li>
+                        <li class="menu-item"><a href="Home-Saas.html">Home-Saas</a></li>
+                        <li class="menu-item"><a href="Home-Brand-Agency.html">Home-Brand-Agency</a></li> 
+                        <li class="menu-item"><a href="Home-Photography.html">Home-Photography</a></li>
+                        <li class="menu-item"><a href="Home-NFT-Porfolio.html">Home-NFT-Porfolio</a></li>
+                        <li class="menu-item"><a href="Home-Freelancer.html">Home-Freelancer</a></li>
+                        <li class="menu-item"><a href="Home-Porfolio.html">Home-Porfolio</a></li> 
+
+                        <li class="menu-item"><a href="Home-Developer-1.html">Home-Developer-1</a></li>
+                        <li class="menu-item"><a href="Home-Menusidebar.html">Home-Menusidebar</a></li>
+                        <li class="menu-item"><a href="Home-SEO-Agency.html">Home-SEO-Agency</a></li>
+                        <li class="menu-item"><a href="Home-Freelancer-Devoloper.html">Home-Freelancer-Devoloper</a></li>
+                        <li class="menu-item"><a href="Home-Developer-2.html">Home-Developer-2</a></li>
+                        <li class="menu-item"><a href="Home-Freelancer-2.html">Home-Freelancer-2</a></li>
+                        <li class="menu-item"><a href="Home-Artiest.html">Home-Artiest</a></li>
+                        <li class="menu-item"><a href="Home-Freelancerltr.html">Home-Freelancer-LTR</a></li>
+                        <li class="menu-item"><a href="Home-Artist.html">Home-Artist</a></li>
+                        <li class="menu-item"><a href="Home-Graphics-Design.html">Home-Graphics-Design</a></li>
+                        <li class="menu-item"><a href="Home-Photography-2.html">Home-Photography-2</a></li>
+                        <li class="menu-item"><a href="Home-Graphics-Design-2.html">Home-Graphics-Design-2</a></li>
+                        <li class="menu-item"><a href="Home-Freelancer-3.html">Home-Freelancer-3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#about">About</a> 
+                </li>
+                <li class="menu-item">
+                    <a href="#services">Sevices</a> 
+                </li>
+                <li class="menu-item">
+                    <a href="#project">Portfolio </a> 
+                </li>
+                <li class="menu-item">
+                    <a href="#testimonials">Testimonials</a> 
+                </li> 
+                <li class="menu-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav><!-- /#main-nav -->
     </header>
     <!-- end Header -->
 
@@ -98,7 +149,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/js/jquery.magnific-popup.min.js"></script>
     <script src="app/js/countto.js"></script>
-    <script src="app/js/app.js"></script> 
+    <script src="app/js/wow.min.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/desktop_nav.js"></script> 
     <script src="app/js/image.js"></script> 
     <script>
     function updateCurvedText($curvedText, radius) {
@@ -145,6 +198,6 @@
     
     $(".radius").on("input change",settingsChanged);
     $(".text").on("input change",settingsChanged);
-    </script>
+    </script> 
 </body>
 </html>

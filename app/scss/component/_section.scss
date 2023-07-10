@@ -126,7 +126,7 @@
     }
     &.style3 {
         background-color: transparent;
-        padding: 10.4% 0 6.5%;
+        padding: 10.4% 0 6.6%;
         .content-box {
             @include flex(flex-start,flex-start);
             position: relative;
@@ -206,7 +206,7 @@
                     position: absolute;
                     z-index: 3;
                     left: -74px;
-                    bottom: 14%;
+                    bottom: 15%;
                     background: #FFFFFF;
                     border: 2px solid #171717;
                     box-shadow: 0px 4px 44px rgba(11, 60, 30, 0.1);
@@ -438,7 +438,7 @@
             left: 0;
             top: 0;
             width: 100%;
-            height: 70%;
+            height: 63%;
             z-index: 0;
         }
         .content-box {
@@ -549,7 +549,7 @@
                         font-weight: 600;
                         font-size: 24px;
                         line-height: 36px;
-                        color: $white;
+                        color: $white !important;
                         font-family: $font-main-4;
                         text-transform: capitalize;
                     }
@@ -827,6 +827,14 @@
                     top: 18px;
                 }
                 .title {
+                    position: relative;
+                    .arow {
+                        position: absolute;
+                        bottom: 15px;
+                        left: 0;
+                        width: 50px;
+                        height: 50px;
+                    }
                     font-family: $font-main-8;
                     font-size: 32px;
                     line-height: 1.25;
@@ -836,6 +844,7 @@
                     font-weight: 600;
                     .cd-words-wrapper {
                         margin-top: 20px;
+                        margin-left: 50px;
                     }
                     span {
                         font-size: 64px;
@@ -1064,7 +1073,6 @@
                 }
                 .note {
                     text-align: left;
-             
                     color: $bg_2;
                     font-weight: 700;
                     font-size: 14px;
@@ -1290,7 +1298,7 @@
         padding: 0 0 8px;
         .content-box {
             position: relative;
-            padding: 24px 0;
+            padding: 32px 0 0;
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -1803,7 +1811,7 @@
         height: 100px;
         background-color: $color-hover;
         transform: rotate(15deg);
-        top: 0;
+        top: 3px;
         right: 30px;
         &.style2 {
             right: 100px;
@@ -1821,6 +1829,8 @@
         height: 100%;
         background: url('./../../assets/images/backgroup/bg_testimonials.jpg') center center no-repeat;
         background-size: cover;
+        background-attachment: fixed;
+
     }
 
 }
@@ -1837,6 +1847,11 @@
 }
 
 .home2 {
+    .tf-title {
+        .title {
+            font-family: $font-main-1;
+        }
+    }
     .tf-section {
         &.tf-service {
             padding: 0;
@@ -1854,9 +1869,29 @@
             }
         }
     }
+    #footer {
+        .button-style.style2 .btn-main {
+            padding: 14px 35px;
+        }
+    }
 }
 
 .home3 {
+    .section-about {
+        &.tf-section {
+            padding: 38px 58px 32px;
+        }
+        .tf-title {
+            .title {
+                width: 65%;
+            }
+            .wrapper-btn {
+                width: 35%;
+                text-align: right;
+                padding-left: 15px;
+            }
+        }
+    }
     .tf-section {
         &.tf-blog  {
             padding-bottom: 196px;
@@ -1870,11 +1905,31 @@
     }
     #footer {
         padding-top: 0px;
-        margin-top: -10px;
+        margin-top: -12px;
         padding-bottom: 130px;
     }
 }
+
+.home21,
+.home17,
+.home23,
+.home8,
+.home5,
 .home4 {
+    #header_main.is-fixed.is-fixed.is-small {
+        .logo-light {
+            display: none;
+        }
+        .logo-dark {
+            display: block;
+        }
+    }
+}
+
+.home4 { 
+    .tf-title-style4 h3.title {
+        font-family: $font-main-3;
+    }
     .page-title {
         .container {
             max-width: 1465px;
@@ -1907,6 +1962,9 @@
         @include flex(center,center);
         border-radius: 50%;
         background: linear-gradient(180deg, #D3C1FC 0.49%, #FEDFFC 52.08%, #D7E8FD 100%);
+        &:hover {
+            cursor: pointer;
+        }
     }
     .copyright {
         font-weight: 400;
@@ -1957,7 +2015,7 @@
                         background-size: cover;
                         color: $bg_2;
                         &:hover {
-                            color: $color-hover;
+                            color: $bg_2;
                         }
                     }
                 }
@@ -2328,6 +2386,13 @@
 }
 
 .home9 { 
+    #footer.style2.black .cta .tf-button {
+        @include transition3;
+        &:hover {
+            background-color: $white;
+            color: $bg_2
+        }
+    }
     .tf-title-style4 h5.title,
     .tf-title-style4 h3.title {
         font-family: $font-main-1;
@@ -2494,6 +2559,14 @@
     }
 }
 .home10 {
+    &.is_light {
+        .tf-testimonials .btn-slider .btn-testimonials {
+            border: 1px solid #E6E6E6;
+            i {
+                color: $bg_2;
+            }
+        }
+    }
     .project-box-style4 {
         &:hover,
         &:active {
@@ -2682,6 +2755,9 @@
     }
 }
 .home11 {
+    .flat-accordion.style2 .flat-toggle {
+        box-shadow: 0px 10px 25px 0px #273F441A;
+    }
     .header {
         height: 92px;
         background-color: transparent;
@@ -2853,7 +2929,154 @@
         backdrop-filter: blur(6px);
     }
 }
+
+
 .home12 {
+    .dashboard-style2 .article-dashboard .body-dashboard {
+        border-radius: 16px;
+    }
+    .dashboard-style2 #side-bar-dashboard .info-style2 {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    .slider-dark,
+    .slider-light {
+        display: none;
+    }
+    .dashboard-style2 #side-bar-dashboard .info-style2 {
+        .social {
+            &.light {
+                display: none;
+            }
+        }
+    }
+    &.is_dark {
+        .slider-dark {
+            display: block;
+        }
+    }
+    &.is_light {
+        .dashboard-style2 #side-bar-dashboard .info-style2 .tf-button {
+            &:hover {
+                background: $bg_2;
+            }
+        }
+        .slider-light {
+            display: block;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact .list_contact li p:nth-child(1) {
+            color: $color_1;
+        }
+        .article-dashboard .body-dashboard .section-inner#Service .box {
+            border: none;
+        }
+        .dashboard-style2 .article-dashboard .menu-dashboard ul li:hover a, 
+        .dashboard-style2 .article-dashboard .menu-dashboard ul li.active a {
+            color: $bg_2;
+            border-color: $bg_2;
+        }
+
+        .dashboard-style2 .article-dashboard .body-dashboard,
+        .dashboard-style2 .article-dashboard,
+        .dashboard-style2 .article-dashboard .menu-dashboard ul {
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(0deg, #E6E6E6, #E6E6E6);
+            &::before {
+                display: none;
+            }
+        }
+        .dashboard-style2 #side-bar-dashboard .info-style2 .tf-button svg {
+            path {
+                stroke :$white;
+            }
+        }
+        &.body {
+            background-color: #F4F4F4;
+        } 
+        .dashboard-style2 #side-bar-dashboard .info-style2 {
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+            
+            .social {
+                &.light {
+                    display: flex;
+                }
+                &.dark {
+                    display: none;
+                }
+            }
+        }
+        .dashboard-style2 #side-bar-dashboard .info-style2 .tf-button {
+            color: $white;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .sub-title {
+            font-weight: 700;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .testimonials-box {
+            border-color: #3BBB67;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact {
+            input,
+            textarea {
+                border: none !important;
+                border-bottom: 1px solid #E6E6E6 !important;
+            }
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact .list_contact li p,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box .link,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box ul li span,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box .time,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .testimonials-box .inner .content h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .testimonials-box .sub,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .content-inner .box .content p,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .content-inner .box .content h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .content-inner .box.full .content h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .content-inner .box.full .content p,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .wrapper_service .box h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box .progress-title-holder span,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box .inner > div p,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box .inner > div h5,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .title,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .sub-title,
+        .dashboard-style2 #side-bar-dashboard .info-style2 .bootom,
+        .dashboard-style2 #side-bar-dashboard .info-style2 ul li,
+        .dashboard-style2 #side-bar-dashboard .info-style2 ul li a,
+        .dashboard-style2 #side-bar-dashboard .info-style2 .name,
+        .dashboard-style2 #side-bar-dashboard .info-style2 .position {
+            color: $bg_2;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .wrapper_service .box {
+            border: 1px solid #E6E6E6;
+            &:hover {
+                border-color: transparent;
+            }
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box {
+            &:hover {
+                border-color: #3BBB67;
+            }
+        }
+        .dashboard-style2 .article-dashboard,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .pricing-box,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box .inner,
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner {
+            border-color: #E6E6E6;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .desc {
+            color: $color_1;
+        } 
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box .inner > div::before {
+            background-color: $white;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box {
+            background-color: transparent;
+            border: none;
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box .progress-content-outter {
+            background-color: #E6E6E6;
+        }
+    }
     &.body {
         background-color: #000
     }
@@ -2864,6 +3087,14 @@
     }
 }
 .home13 {
+    .article-dashboard {
+        border-color: $white;
+    }
+    #side-bar-dashboard .info ul.list li {
+        &.dark {
+            display: none;
+        }
+    }
     #side-bar-dashboard .info,
     .article-dashboard {
         height: 100%;
@@ -2965,23 +3196,33 @@
             background-attachment: inherit;
         }
         .menu_dasboard {
-            position: fixed;
+            padding: 0;
+            position: relative;
+            .fixel_menu {
+                padding: 54px 54px 30px;
+                width: 375px;
+                overflow-y: auto;
+                height: 100vh;
+                position: fixed;
+                left: 0;
+                top: 0;
+                background-color: #141520;
+            }
         }
     }
     .menu_dasboard {
         z-index: 99;
-        width: 375px;
         background: #141520;
         top: 0;
         left: 0;
         width: 375px;
         overflow: hidden;
+        min-width: 375px;
         .fixel_menu {
             padding: 54px 54px 30px;
             width: 375px;
             overflow-y: auto;
             height: 100vh;
-            // padding-bottom: 100px;
         }
         .close_dashboard {
             display: none;
@@ -3052,8 +3293,17 @@
         }
   
     }
-    .section-about .button-style.style4 {
-        margin-top: 0;
+    .section-about {
+        .button-style.style4 {
+            margin-top: 0; 
+        }
+        .wrapper_btn {
+            text-align: right;
+            width: 25%;
+        }
+        .tf-title {
+            width: 75%;
+        }
     }
     .header #site-header-inner .tf-button {
         color: $white;
@@ -3287,6 +3537,9 @@
 }
 
 .home16 {
+    #main-nav .menu li.menu-item-has-children > a::after {
+        right: -12px;
+    }
     .wrap-video a {
         width: 72px;
         height: 72px;
@@ -3667,14 +3920,30 @@
 }
 
 .home17 {
+    .article-dashboard {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    .header {
+        position: fixed;
+        background-color: $white;
+    }
+    &.is_light {
+        .dashboard-style2 #side-bar-dashboard .info-style2 .tf-button {
+            border: 1px solid transparent;
+            &:hover {
+                border-color: $color-hover; 
+            }
+        }
+    }
     overflow-y: hidden;
     #side-bar-dashboard {
-        height: 960px;
-        height: 100vh;
-        overflow-y: scroll;
+        // min-height: 960px;
+        // height: 100vh;
+        // overflow-y: scroll;
     }
     .info-style2 { 
-        overflow-y: scroll;
+        // overflow-y: scroll;
     }
     .swiper-dark {
         display: none;
@@ -3702,6 +3971,7 @@
             }
         }
         #side-bar-dashboard {
+            padding-top: 80px;
             width: 37.5%;
             box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
         }
@@ -3714,8 +3984,10 @@
     .dashboard-style2 #side-bar-dashboard .info-style2 {
         border-radius: 0;
         background: transparent;
-        padding: 42px 40px 40px 30px;
+        padding: 40px 40px 100px 30px;
         margin-left: 10px;
+        height: 100vh;
+        overflow-y: auto;
         box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
         .tf-button {
             background: #FFD84F;
@@ -3724,6 +3996,9 @@
             font-size: 20.1626px;
             font-weight: 700;
             height: 57px;
+            img {
+                margin-right: 12px;
+            }
         }
         .name {
             margin-bottom: 20px;
@@ -3782,7 +4057,7 @@
         }
     }
     .dashboard-style2 .article-dashboard {
-        padding: 0 5px 0 255px;
+        padding: 80px 5px 0 255px;
         background: #FCFCFC;
         border: none;
         .body-dashboard {
@@ -3952,16 +4227,16 @@
                 &#Skills {
                     padding-bottom: 28px;
                 }
-                &#Service {
+                &#services {
                     .wrapper_service {
                         .box-style2 {
+                            border: 1px solid #E6E6E61A;
                             margin-bottom: 30px;
                             @include transition3;
                             &:last-child {
                                 margin-bottom: 0;
                             }
                             padding: 32px;
-                            border: 1px solid rgba(23, 23, 23, 0.1);
                             h5 {
                                 font-size: 24px;
                                 line-height: 36px;
@@ -4076,17 +4351,17 @@
                     .content {
                         @include flex(inherit,flex-start);
                         ul {
-                            width: 50%;
+                            width: 45%;
                         }
                         p {
-                            width: 60%;
+                            width: 55%;
                         }
                         ul li,
                         p {
                             color: $color_1;
                         }
                         ul {
-                            padding-left: 95px;
+                            padding-left: 90px;
                             li {
                                 font-size: 20px;
                                 line-height: 32px;
@@ -4325,6 +4600,7 @@
                 }
                 margin-bottom: 98px;
                 background-color: transparent;
+                border: none;
             }
         }
     } 
@@ -4517,8 +4793,7 @@
                         }
                         .icon {
                             position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
+                            top: 22px;
                             left: 45px;
                             z-index: 1;
                         }
@@ -4529,8 +4804,7 @@
                             padding-right: 20px;
                             left: 16px;
                             position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
+                            top: 10px;
                             border: none;
                             border-right: 1px solid #E6E6E6;
                             -webkit-appearance: none;
@@ -4769,7 +5043,7 @@
                 &#Skills {
                     padding-bottom: 28px;
                 }
-                &#Service {
+                &#services {
                     .wrapper_service {
                         @include flex(inherit,space-between);
                         flex-wrap: wrap;
@@ -5872,9 +6146,16 @@
 }
 
 .home20 {
-    .header .main-nav {
-        left: 38.2%;
+    #header_main.is-fixed.is-fixed.is-small {
+        background-color: $white;
+        .social {
+            display: flex;
+        }
     }
+    .header-style2 #main-nav .menu li.menu-item-has-children > a::after,
+    #main-nav .menu li a {
+        color: $bg_2 !important;
+    } 
     .button-style.style3 {
         height: 60px;
         border-radius: 30px;
@@ -6180,6 +6461,7 @@
     .tf-title .title {
         text-align: right;
         padding-right: 28px;
+        padding-left: 0;
         &::before {
             right: 0;
             left: auto;
@@ -6813,6 +7095,9 @@
 }
 
 .home25 { 
+    .main-nav {
+        display: none;
+    }
     .page-title {
         width: 37.4%;
         padding: 0 80px;
@@ -7014,7 +7299,7 @@
 }
 
 .content-skill {
-    padding: 68px 140px 68px 80px;
+    padding: 68px 140px 68px 78px;
     margin-right: -130px;
     .tf-title {
         .title {
@@ -7054,6 +7339,18 @@
 }
 
 .section-about {
+    .graphic_1,
+    .graphic_2 {
+        position: absolute;
+    }
+    .graphic_1 {
+        top: 0;
+        right: 0;
+    }
+    .graphic_2 {
+        bottom: 0;
+        right: 30%;
+    }
     &.tf-section {
         padding: 38px 58px;
         transform: translateY(-50%); 
@@ -7095,7 +7392,7 @@
 
 .tf-statistics {
     &.tf-section {
-        padding: 80px 0 85px;
+        padding: 80px 0 83px;
     }
     .image {
         position: absolute;
@@ -7421,7 +7718,6 @@
     }
     .body-dashboard {
         padding: 7px 32px 0;
-        margin-bottom: 10px;
         scroll-behavior: smooth;
         .section-inner {
             &#Pricing {
@@ -8787,7 +9083,7 @@
                 line-height: 26px;
                 font-weight: 700;
                 border-radius: 8px;
-                img {
+                svg {
                     margin-right: 12px;
                 }
                 &:hover {

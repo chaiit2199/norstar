@@ -28,7 +28,7 @@
     var body_dashboard = function(value){
         var dashboardToTop = document.getElementById('dashboard');
         var body_dashboard = document.querySelector('.body-dashboard');
-        var offsetTop = dashboardToTop.offsetTop + 66;
+        var offsetTop = dashboardToTop.offsetTop + 70;
         var w = window,
         d = document,
         e = d.documentElement,
@@ -36,7 +36,6 @@
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
         value = 100;
         var result = (y*value)/100; 
-
         body_dashboard.style.height = (result - offsetTop) + "px";
         body_dashboard.style.overflowY = "auto"; 
     };
@@ -50,6 +49,7 @@
         let width = screen.width;
         if(width > 1200) {
             body_dashboard();
+        } else {
         }
     });
 

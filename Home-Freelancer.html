@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
 
 </head>
-<body class="body header-fixed main counter-scroll bg_main_8 home12">
+<body class="body header-fixed main home12 is_light">
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
@@ -28,7 +28,7 @@
         <section id="dashboard" class="dashboard-style2 mt-40"> 
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 wow fadeIn" data-wow-delay=".2s">
                         <div id="side-bar-dashboard">
                             <div class="info-style2">
                                 <p class="position">Front-End Developer <img src="./assets/images/icon/cicle.png" alt=""></p>
@@ -37,31 +37,65 @@
                                 </div>
                                 <h6 class="name">Tony Nguyen</h6>
                                 <ul>
-                                    <li><span>E:</span> <a href="mailto:hi.avitex@gmail.com"></a> hi.avitex@gmail.com</li>
-                                    <li><span>P:</span> <a href="tel:(555) 123-4567"></a> (555) 123-4567</li>
+                                    <li><span>E:</span> <a href="mailto:hi.avitex@gmail.com"> hi.avitex@gmail.com</a></li>
+                                    <li><span>P:</span> <a href="tel:(555) 123-4567">(555) 123-4567</a> </li>
                                     <li><span>A:</span> San Francisco, CA </li> 
                                 </ul>
-                                <ul class="social flex"> 
+                                <ul class="social light flex"> 
                                     <li>
-                                        <a href="#"><img src="./assets/images/icon/twitter.svg" alt=""></a>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/twitter2.svg" alt="">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="./assets/images/icon/dribbble.svg" alt=""></a>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/dribbble2.svg" alt="">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="./assets/images/icon/behance.svg" alt=""></a>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/behance2.svg" alt="">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="./assets/images/icon/printest.svg" alt=""></a>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/printest2.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="social dark flex"> 
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/twitter.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/dribbble.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/behance.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/images/icon/printest.svg" alt="">
+                                        </a>
                                     </li>
                                 </ul>
                                 <p class="bootom">© 2023 Norstar. All Rights Reserved</p>
-                                <a href="mailto:hi.avitex@gmail.com" class="tf-button bg_main_10 radius-4"><img src="./assets/images/icon/mail.svg" alt="">Hire Me</a>
+                                <a href="mailto:hi.avitex@gmail.com" class="tf-button bg_main_10 radius-4"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 4.5H20.5C21.6 4.5 22.5 5.4 22.5 6.5V18.5C22.5 19.6 21.6 20.5 20.5 20.5H4.5C3.4 20.5 2.5 19.6 2.5 18.5V6.5C2.5 5.4 3.4 4.5 4.5 4.5Z" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.5 6.5L12.5 13.5L2.5 6.5" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Hire Me</a>
                             </div>
                         
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-12">
+                    <div class="col-xl-8 col-lg-8 col-md-12 wow fadeIn" data-wow-delay=".2s">
                         <div class="article-dashboard">
                             <div class="menu-dashboard menu-destop">
                                 <ul class="menu-tab">
@@ -238,7 +272,7 @@
                                     </div>
                                     
  
-                                    <p class="sub-title">
+                                    <p class="sub-title" id="Portfolio">
                                             My portfolio 
                                     </p>
                                     <h2 class="title heading mb-style mb-30">Featured Projects
@@ -247,11 +281,11 @@
                                         <div class="box full" >
                                             <div class="image">
                                                 <img src="./assets/images/common/project_20.jpg" alt="">
-                                                <a href="#" class="button style-2 center hover-circle"><span class="effect"></span><span class="text">View <br>
+                                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
                                                     Project</span></a>
                                             </div>
                                             <div class="content">
-                                                <h5>
+                                                <h5 class="js-project">
                                                     <a href="#">Fluidd Application</a>
                                                 </h5>
                                                 <p>Application</p>
@@ -260,11 +294,11 @@
                                         <div class="box">
                                             <div class="image">
                                                 <img src="./assets/images/common/project_21.jpg" alt="">
-                                                <a href="#" class="button style-2 center hover-circle"><span class="effect"></span><span class="text">View <br>
+                                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
                                                     Project</span></a>
                                             </div>
                                             <div class="content">
-                                                <h5>
+                                                <h5 class="js-project">
                                                     <a href="#">Architecture website</a>
                                                 </h5>
                                                 <p>Development</p>
@@ -273,11 +307,11 @@
                                         <div class="box">
                                             <div class="image">
                                                 <img src="./assets/images/common/project_22.jpg" alt="">
-                                                <a href="#" class="button style-2 center hover-circle"><span class="effect"></span><span class="text">View <br>
+                                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
                                                     Project</span></a>
                                             </div>
                                             <div class="content">
-                                                <h5>
+                                                <h5 class="js-project">
                                                     <a href="#">Poster Freedom</a>
                                                 </h5>
                                                 <p>Design UI/UX</p>
@@ -286,11 +320,11 @@
                                         <div class="box">
                                             <div class="image">
                                                 <img src="./assets/images/common/project_23.jpg" alt="">
-                                                <a href="#" class="button style-2 center hover-circle"><span class="effect"></span><span class="text">View <br>
+                                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
                                                     Project</span></a>
                                             </div>
                                             <div class="content">
-                                                <h5>
+                                                <h5 class="js-project">
                                                     <a href="#">Job Board Website</a>
                                                 </h5>
                                                 <p>Development</p>
@@ -299,11 +333,11 @@
                                         <div class="box">
                                             <div class="image">
                                                 <img src="./assets/images/common/project_24.jpg" alt="">
-                                                <a href="#" class="button style-2 center hover-circle"><span class="effect"></span><span class="text">View <br>
+                                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
                                                     Project</span></a>
                                             </div>
                                             <div class="content">
-                                                <h5>
+                                                <h5 class="js-project">
                                                     <a href="#">E-Commerce</a>
                                                 </h5>
                                                 <p>Programming</p>
@@ -407,50 +441,98 @@
 
                                     <p class="sub-title mt-40">
                                         WORK WITH 100+ BRANDS WORLDWIDE </p> 
-                                    <div class="swiper-container sl-brand-7">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_39.png" alt=""></a>
+                                    <div class="slider-light">
+                                        <div class="swiper-container sl-brand-7">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_13.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_12.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_14.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_15.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_16.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_17.png" alt=""></a>
+                                                </div> 
                                             </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_40.png" alt=""></a>
+                                        </div> 
+                                        <div class="swiper-container sl-brand-7">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_15.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_16.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_17.png" alt=""></a>
+                                                </div> 
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_13.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_12.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_14.png" alt=""></a>
+                                                </div>
                                             </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_41.png" alt=""></a>
+                                        </div> 
+                                    </div>
+                                    <div class="slider-dark">
+                                        <div class="swiper-container sl-brand-7">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_39.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_40.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_41.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_42.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_43.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_44.png" alt=""></a>
+                                                </div> 
                                             </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_42.png" alt=""></a>
+                                        </div> 
+                                        <div class="swiper-container sl-brand-7">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_42.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_43.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_44.png" alt=""></a>
+                                                </div> 
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_39.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_40.png" alt=""></a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#"><img src="./assets/images/common/brand_41.png" alt=""></a>
+                                                </div>
                                             </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_43.png" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_44.png" alt=""></a>
-                                            </div> 
-                                        </div>
-                                    </div> 
-                                    <div class="swiper-container sl-brand-7">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_42.png" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_43.png" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_44.png" alt=""></a>
-                                            </div> 
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_39.png" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_40.png" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#"><img src="./assets/images/common/brand_41.png" alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div> 
+                                        </div> 
+                                    </div>
                                 </div>
                                 <div class="section-inner" id="Contact">
                                     <p class="sub-title mb-28"> 
@@ -470,15 +552,15 @@
                                         </li>
                                     </ul>
 
-                                    <form action="contact/contact-process.php" class="form-contact" id="contactform">
+                                    <form action="#" class="form-contact" id="contactform">
                                         <fieldset>
-                                            <input type="text" name="name" id="name" placeholder="Your name">
+                                            <input type="text" name="name" id="name" placeholder="Your name" required>
                                         </fieldset>
                                         <fieldset>
-                                            <input type="email" name="mail" id="mail" placeholder="Your email">
+                                            <input type="email" name="mail" id="mail" placeholder="Your email" required>
                                         </fieldset> 
                                         <fieldset class="mb-52">
-                                            <textarea placeholder="Your Message..." rows="2" tabindex="5" name="message" class="message" id="message"></textarea>
+                                            <textarea placeholder="Your Message..." rows="2" tabindex="5" name="message" class="message" id="message" required></textarea>
                                         </fieldset>
                                         <button class="tf-button" type="submit">
                                             Submit
@@ -494,12 +576,61 @@
 
    
     </div>
+
+    <div id="project-modal" class="modal">
+        <div class="bg-modal bg-modal-project"></div>
+        <div class="modal-content project--modal">
+            <span class="close-modal close-modal-project"><img src="./assets/images/icon/close_modal.svg" alt=""></span>
+            <div class="box-details project-details">
+                <div class="content">
+                    <h3 class="heading mb-28">
+                        3D Motion Graphic
+                    </h3> 
+                    <div class="image mb-32">
+                        <img src="./assets/images/post/post_15.jpg" alt="">
+                    </div> 
+                    <p class="txt mb-20">
+                        We are opening up our platform and inviting all builders to create the first plugins and widgets for FigJam. Check out our documentation to start building new plugins or republishing your existing Figma plugins for FigJam. 
+                    </p>  
+                    <p class="txt mb-32">
+                        These are just a handful of examples—we have 35 builders who have FigJam plugins already in the works, and we are so excited for you to join them.
+                    </p>
+                    <div class="wraper-tag">
+                        <ul class="tag">
+                            <li><span>Web Design</span></li>
+                            <li><span>Graphic Design</span></li>
+                            <li><span>UX Research</span></li>
+                        </ul>
+                        <ul class="link">
+                            <li><span>Share This Post:</span></li>
+                            <li>
+                                <a href="#"><img src="./assets/images/icon/fb_3.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/icon/social-3.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/images/icon/v.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-project">
+                    <ul class="inner">
+                        <li>Project Type: <span>Graphic Design</span></li>
+                        <li>Client: <span>Tony Nguyen</span></li>
+                        <li>Duration:  <span>2 Weeks</span></li>
+                        <li>Task: <span>UI/UX, Frontend</span></li>
+                        <li>Budget:  <span>$3400</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
     <a id="scroll-top"></a>
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/switcher.js"></script>
-    <script src="app/js/plugin.js"></script>
-    <!-- <script src="app/js/gsap.min.js"></script> -->
-    <!-- <script src="app/js/cursor-mouse.js"></script> -->
+    <script src="app/js/plugin.js"></script> 
     <script src="app/js/bootstrap.min.js"></script>
     <script src="app/js/swiper-bundle.min.js"></script>
     <script src="app/js/swiper.js"></script>
@@ -509,10 +640,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/js/jquery.magnific-popup.min.js"></script>
     <script src="app/js/countto.js"></script>
+    <script src="app/js/wow.min.js"></script>
     <script src="app/js/app.js"></script>
+    <script src="app/js/mobile_nav.js"></script>
     <script src="app/js/dashboard.js"></script>
     <script src="app/js/animation_heading.js"></script>
     <script src="app/js/donatProgress.js"></script>
+    <script src="app/js/project-details.js"></script>
     <script>
     function updateCurvedText($curvedText, radius) {
         $curvedText.css("min-width", "initial");

@@ -1,5 +1,5 @@
 @use '../abstracts/' as *;
-
+#main-nav-mobi-style2,
 #main-nav-mobi {
     @include translateY0;
     display: block ;
@@ -78,12 +78,47 @@
 }
 
 /* Mobile Menu Button */
+.is_dark,
+#header_main.is-fixed.is-fixed.is-small {
+    .mobile-button {
+        &.style2 {
+            span,
+            &::after,
+            &::before {
+                background: $white;
+            }
+        }
+    }
+}
+
+.home21 {
+    .mobile-button {
+        left: 15px;
+        right: auto;
+    }
+} 
+
+.home7,
+.home5 { 
+    .btn-menu {
+        position: relative;
+    }
+    .header.header-main-nav .mobile-button {
+        right: auto; 
+        display: block;
+        span,
+        &::after,
+        &::before {
+            background: $bg_2;
+        }
+    } 
+} 
 .mobile-button {
     &.style2 {
         span,
         &::after,
         &::before {
-            background: linear-gradient(88.34deg, #456AEB 32.22%, #DF5788 66.18%);
+            background: $bg_2;
         }
     }
     @include transition3;
@@ -155,15 +190,21 @@
 }
 /* Sub Menu */
 #main-nav .sub-menu {
+    padding: 60px;
+        margin: 0 auto;
+        @include flex(flex-start,space-between);
+        flex-wrap: wrap;
+        li {
+            width: calc((100% - 32px) / 3 )
+        }
     position: absolute;
     top: 100%;
     left: 0;
-    width: 320px;
+    width: 100%;
     max-height: 500px;
     overflow-y: auto;
     background-color: $white;
     box-shadow: $box-shadow;
-    border-radius: 2px;
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -177,8 +218,6 @@
     -ms-transform: translateY(15px);
     -o-transform: translateY(15px);
     transform: translateY(15px);
-    padding: 5px 0;
-    z-index: -99;
     li {
         margin-right: 0;
         a {
@@ -209,5 +248,9 @@
     }
     #main-nav .menu li a:hover {
         color: #BBADFF;
+        &::after {
+            color: #BBADFF;
+        }
     }
 }
+
