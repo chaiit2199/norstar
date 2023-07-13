@@ -452,7 +452,7 @@
 
     var parallax = function () {
         if ($().parallax && isMobile.any() == null) {
-          $(".parallax").parallax("50%", 0.2);
+            $(".parallax").parallax("30%", 0.2);
         }
       };
 

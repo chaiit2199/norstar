@@ -85,7 +85,7 @@
             span,
             &::after,
             &::before {
-                background: $white;
+                background: $white !important;
             }
         }
     }
@@ -97,11 +97,14 @@
         right: auto;
     }
 } 
-
+.home25,
 .home7,
 .home5 { 
     .btn-menu {
-        position: relative;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .header.header-main-nav .mobile-button {
         right: auto; 
@@ -113,6 +116,23 @@
         }
     } 
 } 
+.home25 {
+    #site-header-inner .header__logo {
+        padding-left: 0;
+    }
+    .header.header-main-nav .mobile-button {
+        bottom: 52px;
+        top: auto;
+        transform: none;
+    }
+
+    #main-nav-mobi {
+        left: 90px;
+        width: calc(100% - 90px);
+        top: 0px;
+    }
+
+}
 .mobile-button {
     &.style2 {
         span,

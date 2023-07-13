@@ -1,33 +1,49 @@
-!function(h) {
-  var l = h(window)
-    , c = l.height();
-  l.resize(function() {
-      c = l.height()
-  }),
-  h.fn.parallax = function(i, e, n) {
-      var r, u = h(this);
-      function t() {
-          var o = l.scrollTop();
-          u.each(function() {
-              var n = h(this)
-                , t = n.offset().top;
-              t + r(n) < o || o + c < t || u.css("backgroundPosition", i + " " + Math.round((t - o) * e) + "px")
-          })
-      }
-      u.each(function() {
-          u.offset().top
-      }),
-      r = n ? function(n) {
-          return n.outerHeight(!0)
-      }
-      : function(n) {
-          return n.height()
-      }
-      ,
-      (arguments.length < 1 || null === i) && (i = "50%"),
-      (arguments.length < 2 || null === e) && (e = .1),
-      (arguments.length < 3 || null === n) && (n = !0),
-      l.bind("scroll", t).resize(t),
-      t()
-  }
-}(jQuery);
+(function(jQuery) {
+    var jQuerywindow = jQuery(window);
+    var windowHeight = jQuerywindow.height();
+    jQuerywindow.resize(function() {
+        windowHeight = jQuerywindow.height();
+    });
+    jQuery.fn.parallax = function(xpos, speedFactor, outerHeight) {
+        var jQuerythis = jQuery(this);
+        var getHeight;
+        var firstTop;
+        var paddingTop = 0;
+        jQuerythis.each(function() {
+            firstTop = jQuerythis.offset().top;
+        });
+        if (outerHeight) {
+            getHeight = function(jqo) {
+                return jqo.outerHeight(true);
+            }
+            ;
+        } else {
+            getHeight = function(jqo) {
+                return jqo.height();
+            }
+            ;
+        }
+        if (arguments.length < 1 || xpos === null)
+            xpos = "50%";
+        if (arguments.length < 2 || speedFactor === null)
+            speedFactor = 0.1;
+        if (arguments.length < 3 || outerHeight === null)
+            outerHeight = true;
+        function update() {
+            var pos = jQuerywindow.scrollTop();
+            jQuerythis.each(function() {
+                var jQueryelement = jQuery(this);
+                var top = jQueryelement.offset().top;
+                var height = getHeight(jQueryelement);
+                if (top + height < pos || top > pos + windowHeight) {
+                    return;
+                }
+                jQuerythis.css('backgroundPosition', xpos + " " + Math.round((top - pos) * speedFactor) + "px");
+            });
+        }
+        jQuerywindow.bind('scroll', update).resize(update);
+        update();
+    }
+    ;
+}
+)(jQuery);

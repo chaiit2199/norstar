@@ -2,7 +2,7 @@
 
 var swiper =  new Swiper(".sl-testimonial", {
     slidesPerView: 1,
-    loop: false, 
+    loop: false,  
     spaceBetween: 30,
     navigation: {
         nextEl: ".btn-next-testimonials",
@@ -18,11 +18,12 @@ var swiper =  new Swiper(".sl-testimonial", {
 var swiper =  new Swiper(".banner_26", {
     slidesPerView: 1,
     loop: true, 
-    spaceBetween: 0,
-    // autoplay: {
-    //     delay: 3000,
-    // }, 
     speed: 2000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+    },
+    spaceBetween: 0, 
     navigation: {
         nextEl: ".btn-next-testimonials",
         prevEl: ".btn-prev-testimonials",
@@ -35,7 +36,7 @@ var swiper =  new Swiper(".banner_26", {
 
 var swiper =  new Swiper(".sl-testimonial-3", {
     slidesPerView: 1,
-    loop: false, 
+    loop: false,  
     spaceBetween: 0,
     navigation: {
         nextEl: ".next-testimonials",
@@ -67,7 +68,7 @@ var swiper =  new Swiper(".sl-testimonial-3", {
 
 var swiper =  new Swiper(".sl-testimonial-5", {
     slidesPerView: 1,
-    loop: false, 
+    loop: false,  
     spaceBetween: 32,
     navigation: {
         nextEl: ".btn-next-testimonials",
@@ -587,7 +588,7 @@ var swiper =  new Swiper(".sl-project-2", {
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,
-    loop: false, 
+    loop: false,  
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -611,7 +612,7 @@ var swiper =  new Swiper(".sl-testimonial-2", {
 
 var swiper =  new Swiper(".sl-testimonial-3", {
     slidesPerView: 1,
-    loop: false, 
+    loop: false,  
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -643,7 +644,7 @@ var swiper =  new Swiper(".sl-testimonial-3", {
 
 var swiper =  new Swiper(".sl-testimonial-4", {
     slidesPerView: 1,
-    loop: true, 
+    loop: false,  
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -745,11 +746,7 @@ var swiper = new Swiper(".mySwiper6", {
     shortSwipes: false,
     longSwipes: false,
     allowTouchMove: true,
-    reverseDirection: true,
-    // autoplay: {
-    // delay: 0.3, 
-    // }, 
-    // autoplay:false,
+    reverseDirection: true, 
     freeMode: true, 
     speed: 2000,
     disableOnInteraction: true

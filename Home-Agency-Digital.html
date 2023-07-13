@@ -134,7 +134,7 @@
         <!-- end Header -->
 
         <section class="page-title style1 " >
-            <div class="overlay"></div>
+            <div class="overlay parallax"></div>
             <div class="container">
                 <div class="content-box wow fadeInUp" data-wow-delay=".3s">
                     <div class="content">
@@ -353,8 +353,8 @@
                                 <div class="project-box pt-96 mb-68 wow fadeIn" data-wow-delay=".2s">
                                     <div class="image">
                                         <img src="./assets/images/common/project_1.png" alt="">
-                                        <div class="position-button">
-                                            <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                        <div class="position-button hover-this">
+                                            <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                                 Project</span></a>
                                         </div>
                                     </div>
@@ -366,8 +366,8 @@
                                 <div class="project-box wow fadeIn" data-wow-delay=".2s">
                                     <div class="image">
                                         <img src="./assets/images/common/project_2.png" alt="">
-                                        <div class="position-button">
-                                            <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                        <div class="position-button hover-this">
+                                            <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                                 Project</span></a>
                                         </div>
                                     </div>
@@ -381,8 +381,8 @@
                                 <div class="project-box mb-68 wow fadeIn" data-wow-delay=".2s">
                                     <div class="image">
                                         <img src="./assets/images/common/project_3.png" alt="">
-                                        <div class="position-button">
-                                            <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                        <div class="position-button hover-this">
+                                            <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                                 Project</span></a>
                                         </div>
                                     </div>
@@ -394,8 +394,8 @@
                                 <div class="project-box wow fadeIn" data-wow-delay=".2s">
                                     <div class="image">
                                         <img src="./assets/images/common/project_4.png" alt="">
-                                        <div class="position-button">
-                                            <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                        <div class="position-button hover-this">
+                                            <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                                 Project</span></a>
                                         </div>
                                     </div>
@@ -412,7 +412,7 @@
         </section>
 
         <section class="tf-section tf-testimonial" id="testimonials">
-            <div class="overlay"></div>
+            <div class="overlay parallax"></div>
             <div class="container">
                 <div class="row"> 
                     <div class="col-md-12 wow fadeIn" data-wow-delay=".2s">
@@ -714,6 +714,21 @@
     <script src="app/js/mobile_nav.js"></script>
     <script src="app/js/blog-details.js"></script>
     <script src="app/js/image-image.js"></script> 
-
+    <script src="app/js/parallax.js"></script>
+    <script>
+        const link = document.querySelectorAll('.hover-this');
+        const animateit = function (e) {
+            const hoverAnim = this.querySelector('.hover-anim');
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+            hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            if (e.type === 'mouseleave') hoverAnim.style.transform = '';
+        }; 
+        link.forEach(b => b.addEventListener('mousemove', animateit));
+        link.forEach(b => b.addEventListener('mouseleave', animateit)); 
+    </script>
 </body>
 </html>

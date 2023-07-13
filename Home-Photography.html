@@ -18,13 +18,13 @@
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
-        <!-- <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div> -->
-        <!-- /preload -->
+        <div class="preload preload-container">
+            <p class="heading-preload" data-text="loading">loading</p>
+        </div>
+        <!-- preload -->
     <div id="wrapper">
         <!-- Header -->
-    <header id="header_main" class="header header-style2">
+    <header id="header_main" class="header header-style2 dark--white">
         <div class="container">
             <div id="site-header-inner">
                 <div class="header__logo">
@@ -34,7 +34,11 @@
                 <nav id="main-nav" class="main-nav">
                     <ul id="menu-primary-menu" class="menu">
                         <li class="menu-item menu-item-has-children  current-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#">
+                                <div class="menu-text">
+                                    <span>H</span><span>o</span><span>m</span><span>e</span>
+                                </div> 
+                            </a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="Home-Agency-Digital.html">Home-Agency-Digital</a></li>
                                 <li class="menu-item"><a href="Home-Agency-Creative.html">Home-Agency-Creative</a></li>
@@ -66,27 +70,51 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="#about">About</a> 
+                            <a href="#about">
+                                <div class="menu-text">
+                                    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#services">Services </a> 
+                            <a href="#services">
+                                <div class="menu-text">
+                                    <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+                                </div> 
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#project">Work</a> 
+                            <a href="#project">
+                                <div class="menu-text">
+                                    <span>W</span><span>o</span><span>r</span><span>k</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#testimonials">Testimonials</a> 
+                            <a href="#testimonials">
+                                <div class="menu-text">
+                                    <span>T</span><span>e</span><span>s</span><span>t</span><span>i</span><span>m</span><span>o</span><span>n</span><span>i</span><span>a</span><span>l</span><span>s</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#blog">Blog</a> 
+                            <a href="#blog">
+                                <div class="menu-text">
+                                    <span>B</span><span>l</span><span>o</span><span>g</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#footer">Contact</a>
+                            <a href="#footer">
+                                <div class="menu-text">
+                                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav><!-- /#main-nav -->
-                <a  href="#" class="left-auto show-light hide_mobile"><img src="./assets/images/icon/menu-light.svg" alt=""></a>
-                <a href="#" class="left-auto show-dark hide_mobile"><img src="./assets/images/icon/menu.svg" alt=""></a>
+                <a  href="#" class="header-right left-auto show-light hide_mobile"><img src="./assets/images/icon/menu-light.svg" alt=""></a>
+                <a href="#" class="header-right left-auto show-dark hide_mobile"><img src="./assets/images/icon/menu.svg" alt=""></a>
                 <div class="mobile-button style2"><span></span></div><!-- /.mobile-button -->
             </div>
         </div>
@@ -117,9 +145,9 @@
                     </a>
 
                 </div>  
-                <div class="image-box img-animation wow">
+                <div class="image-box img-animation wow hover-this">
                     <img src="./assets/images/common/page-title_5.jpg" class="" alt=""> 
-                    <div class="box" data-aos-delay="100" > 
+                    <div class="box hover-anim" data-aos-delay="100" > 
                         <p>Practical <br> experience <br>
                                 of 20 years</p> 
                     </div>
@@ -592,5 +620,20 @@
     <script src="app/js/mobile_nav.js"></script>
     <script src="app/js/animation_heading.js"></script>
     <script src="app/js/project-details.js"></script>
+    <script>
+        const link = document.querySelectorAll('.hover-this');
+        const animateit = function (e) {
+            const hoverAnim = this.querySelector('.hover-anim');
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+            hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            if (e.type === 'mouseleave') hoverAnim.style.transform = '';
+        }; 
+        link.forEach(b => b.addEventListener('mousemove', animateit));
+        link.forEach(b => b.addEventListener('mouseleave', animateit)); 
+    </script>
 </body>
 </html>

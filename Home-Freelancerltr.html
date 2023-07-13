@@ -18,23 +18,27 @@
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
-        <!-- <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div> -->
-        <!-- /preload -->
+        <div class="preload preload-container">
+            <p class="heading-preload" data-text="loading">loading</p>
+        </div>
+        <!-- preload -->
     <div id="wrapper">
         <!-- Header -->
-    <header id="header_main" class="header header-style2">
+    <header id="header_main" class="header header-style2 dark--white">
         <div class="container">
             <div id="site-header-inner">
-                <div class="header__logo">
+                <div class="header__logo header-right">
                     <a class="logo-light" href="Home-Agency-Digital.html"><img src="assets/images/logo/logo19.png" alt=""></a>
                     <a class="logo-dark" href="Home-Agency-Digital.html"><img src="assets/images/logo/logo20.png" alt=""></a>
                 </div>
                 <nav id="main-nav" class="main-nav">
                     <ul id="menu-primary-menu" class="menu">
                         <li class="menu-item menu-item-has-children  current-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#">
+                                <div class="menu-text">
+                                    <span>H</span><span>o</span><span>m</span><span>e</span>
+                                </div> 
+                            </a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="Home-Agency-Digital.html">Home-Agency-Digital</a></li>
                                 <li class="menu-item"><a href="Home-Agency-Creative.html">Home-Agency-Creative</a></li>
@@ -66,19 +70,39 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="#resume">About</a> 
+                            <a href="#resume">
+                                <div class="menu-text">
+                                    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#sevices">Sevices</a> 
+                            <a href="#sevices">
+                                <div class="menu-text">
+                                    <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+                                </div>  
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#project">Work </a> 
+                            <a href="#project">
+                                <div class="menu-text">
+                                    <span>W</span><span>o</span><span>r</span><span>k</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#testimonials">Testimonials</a> 
+                            <a href="#testimonials">
+                                <div class="menu-text">
+                                    <span>T</span><span>e</span><span>s</span><span>t</span><span>i</span><span>m</span><span>o</span><span>n</span><span>i</span><span>a</span><span>l</span><span>s</span>
+                                </div>
+                            </a> 
                         </li> 
                         <li class="menu-item">
-                            <a href="contact">Contact</a>
+                            <a href="contact">
+                                <div class="menu-text">
+                                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav><!-- /#main-nav -->
@@ -341,9 +365,9 @@
                     <div class="wrapper_portfolio">
                         
                         <div class="box pt-20 wow fadeIn" data-wow-delay=".2s">
-                            <div class="image img-animation wow">
+                            <div class="image img-animation wow hover-this">
                                 <img src="./assets/images/common/portfolio_14.jpg" alt="">
-                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
+                                <a href="#" class="button style-2 center hover-circle js-project hover-anim"><span class="effect"></span><span class="text">View <br>
                                     Project</span></a>
                             </div>
                             <div class="content">
@@ -353,9 +377,9 @@
                             </div>
                         </div>
                         <div class="box active wow fadeIn" data-wow-delay=".4s">
-                            <div class="image img-animation wow">
+                            <div class="image img-animation wow hover-this">
                                 <img src="./assets/images/common/portfolio_13.jpg" alt="">
-                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
+                                <a href="#" class="button style-2 center hover-circle js-project hover-anim"><span class="effect"></span><span class="text">View <br>
                                     Project</span></a>
                             </div>
                             <div class="content">
@@ -366,9 +390,9 @@
                         </div>
                         
                         <div class="box wow fadeIn" data-wow-delay=".2s">
-                            <div class="image img-animation wow">
+                            <div class="image img-animation wow hover-this">
                                 <img src="./assets/images/common/portfolio_16.jpg" alt="">
-                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
+                                <a href="#" class="button style-2 center hover-circle js-project hover-anim"><span class="effect"></span><span class="text">View <br>
                                     Project</span></a>
                             </div>
                             <div class="content">
@@ -378,9 +402,9 @@
                             </div>
                         </div>
                         <div class="box pt-40 wow fadeIn" data-wow-delay=".4s">
-                            <div class="image img-animation wow">
+                            <div class="image img-animation wow hover-this">
                                 <img src="./assets/images/common/portfolio_15.jpg" alt="">
-                                <a href="#" class="button style-2 center hover-circle js-project"><span class="effect"></span><span class="text">View <br>
+                                <a href="#" class="button style-2 center hover-circle js-project hover-anim"><span class="effect"></span><span class="text">View <br>
                                     Project</span></a>
                             </div>
                             <div class="content">
@@ -742,6 +766,21 @@
     <script src="app/js/animation_heading.js"></script>
     <script src="app/js/donatProgress.js"></script>  
     <script src="app/js/project-details.js"></script>
+    <script>
+        const link = document.querySelectorAll('.hover-this');
+        const animateit = function (e) {
+            const hoverAnim = this.querySelector('.hover-anim');
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+            hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            if (e.type === 'mouseleave') hoverAnim.style.transform = '';
+        }; 
+        link.forEach(b => b.addEventListener('mousemove', animateit));
+        link.forEach(b => b.addEventListener('mouseleave', animateit)); 
+    </script>
  
 </body>
 </html>

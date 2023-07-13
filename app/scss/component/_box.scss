@@ -286,6 +286,13 @@
     .icon {
         margin-bottom: 24px; 
         @include flex(flex-start,space-between);
+        .img {
+            -webkit-transition: all 0.8s ease;
+            -moz-transition: all 0.8s ease;
+            -ms-transition: all 0.8s ease;
+            -o-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+        }
     }
     .content {
         .title {
@@ -294,6 +301,9 @@
     }
     &:hover {
         .icon {
+            .img {
+                transform: rotateY(360deg);
+            }
             a {
                 transform: translate3d(10px,-10px,-10px);
             }

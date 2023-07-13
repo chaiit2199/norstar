@@ -1,4 +1,9 @@
 @use '../abstracts/' as *;
+.swiper-container {
+    &:hover {
+        cursor: ew-resize
+    }
+}
 .swiper-pagination {
     @include flex(center,center);
     width: 100%;

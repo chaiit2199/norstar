@@ -327,3 +327,12 @@ $hover-margin: -($spacing-3 - 2);
     color: $bg_2;
     padding: 11px 34px;
 }
+
+.hover-this .hover-anim {
+    pointer-events: none;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}

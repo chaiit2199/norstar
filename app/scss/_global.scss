@@ -965,6 +965,13 @@ img.dark {
 
 
 .is_dark {  
+    .header-style2.dark--white #main-nav .menu li a .menu-text {
+        text-shadow: 0 16px 0 $white;
+    }
+    .page-title.style11 .content-box .content .title,
+    .page-title.style4 .content-box .content .title {
+        color: $white;
+    }
     &.home17 .header {
         background-color: $bg_2;
     }

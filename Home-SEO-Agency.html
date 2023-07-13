@@ -18,13 +18,13 @@
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
-        <!-- <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div> -->
-        <!-- /preload -->
+        <div class="preload preload-container">
+            <p class="heading-preload" data-text="loading">loading</p>
+        </div>
+        <!-- preload -->
     <div id="wrapper">
         <!-- Header -->
-        <header id="header_main" class="header header-style2">
+        <header id="header_main" class="header header-style2 dark--white">
         <div class="container">
             <div id="site-header-inner">
                 <div class="header__logo">
@@ -34,7 +34,11 @@
                 <nav id="main-nav" class="main-nav">
                     <ul id="menu-primary-menu" class="menu">
                         <li class="menu-item menu-item-has-children  current-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#">
+                                <div class="menu-text">
+                                    <span>H</span><span>o</span><span>m</span><span>e</span>
+                                </div> 
+                            </a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="Home-Agency-Digital.html">Home-Agency-Digital</a></li>
                                 <li class="menu-item"><a href="Home-Agency-Creative.html">Home-Agency-Creative</a></li>
@@ -66,23 +70,45 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="#about">About</a> 
+                            <a href="#about">
+                                <div class="menu-text">
+                                    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#services">Sevices</a> 
+                            <a href="#services">
+                                <div class="menu-text">
+                                    <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+                                </div> 
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#project">Portfolio </a> 
+                            <a href="#project">
+                                <div class="menu-text">
+                                    <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#testimonials">Testimonials</a> 
+                            <a href="#testimonials">
+                                <div class="menu-text">
+                                    <span>T</span><span>e</span><span>s</span><span>t</span><span>i</span><span>m</span><span>o</span><span>n</span><span>i</span><span>a</span><span>l</span><span>s</span>
+                                </div>
+                            </a> 
                         </li> 
                         <li class="menu-item">
-                            <a href="#contact">Contact</a>
+                            <a href="#contact">
+                                <div class="menu-text">
+                                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav><!-- /#main-nav -->
-                <a href="tel:(01) 234.567.99" class="tf-button">Call Us: (234) 567 890 123</a>
+                <div class="header-btn">
+                    <a href="tel:(01) 234.567.99" class="tf-button">Call Us: (234) 567 890 123</a>
+                </div>
                 <div class="mobile-button style2"><span></span></div><!-- /.mobile-button -->
             </div>
         </div>
@@ -168,9 +194,9 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12">
-                    <div class="tf-title-style4 center mb-30 wow fadeInUp" data-wow-delay=".2s">
-                        <h3 class="title mb-24">Our <span>SEO services</span></h3>
-                        <p class="color1">This is  simply dummy text printing and typesetting industry been industry's. <br class="show-destop"> This is  simply dummy text been industry! <a href="#">View case studies</a></p>
+                    <div class="tf-title-style4 center mb-30 wow d-rotate">
+                        <h3 class="title mb-24 rotate-text">Our <span>SEO services</span></h3>
+                        <p class="color1 wow fadeIn" data-wow-delay=".2s">This is  simply dummy text printing and typesetting industry been industry's. <br class="show-destop"> This is  simply dummy text been industry! <a href="#">View case studies</a></p>
                     </div> 
                 </div> 
                 <div class="col-md-12">
@@ -355,9 +381,9 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12">
-                    <div class="tf-title-style4 center mb-52 wow fadeIn" data-wow-delay=".2s">
-                        <h3 class="title mb-24">The Work We’ve  <span>Already Finished</span></h3>
-                        <p class="color1">Here are some examples of successful SEO projects we've completed for freelancers</p>
+                    <div class="tf-title-style4 center mb-52 wow d-rotate">
+                        <h3 class="title mb-24 rotate-text">The Work We’ve  <span>Already Finished</span></h3>
+                        <p class="color1 wow fadeIn" data-wow-delay=".2s">Here are some examples of successful SEO projects we've completed for freelancers</p>
                     </div> 
                 </div> 
                 <div class="col-md-12">
@@ -366,10 +392,10 @@
                             <div class="content">
                                 <h5 class="title js-project"><a href="#">Ma Biggidy - HR Manager Mobile App</a></h5>
                             </div>
-                            <div class="image">
+                            <div class="image hover-this">
                                 <img src="./assets/images/common/project_35.jpg" alt="">
                                 <div class="position-button">
-                                    <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                    <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                         Project</span></a>
                                 </div>
                             </div> 
@@ -378,10 +404,10 @@
                             <div class="content">
                                 <h5 class="title js-project"><a href="#">Study And Pass PTCB Exem Website</a></h5>
                             </div>
-                            <div class="image">
+                            <div class="image hover-this">
                                 <img src="./assets/images/common/project_36.jpg" alt="">
                                 <div class="position-button">
-                                    <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                    <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                         Project</span></a>
                                 </div>
                             </div> 
@@ -390,10 +416,10 @@
                             <div class="content">
                                 <h5 class="title js-project"><a href="#">Saas website for unique  start-up brands</a></h5>
                             </div>
-                            <div class="image">
+                            <div class="image hover-this">
                                 <img src="./assets/images/common/project_38.jpg" alt="">
                                 <div class="position-button">
-                                    <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                    <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                         Project</span></a>
                                 </div>
                             </div> 
@@ -402,10 +428,10 @@
                             <div class="content">
                                 <h5 class="title js-project"><a href="#">Wallet App - Crypto Trading Exchange</a></h5>
                             </div>
-                            <div class="image">
+                            <div class="image hover-this">
                                 <img src="./assets/images/common/project_37.jpg" alt="">
                                 <div class="position-button">
-                                    <a href="#" class="button center hover-circle js-project"><span class="effect"></span><span  class="text">View <br>
+                                    <a href="#" class="button center hover-circle js-project hover-anim"><span class="effect"></span><span  class="text">View <br>
                                         Project</span></a>
                                 </div>
                             </div> 
@@ -423,9 +449,9 @@
             </div>
             <div class="row"> 
                 <div class="col-md-12">
-                    <div class="tf-title-style4 center mb-77 wow fadeIn" data-wow-delay=".2s">
-                        <h3 class="title mb-24">Choose The <span>Plans & Pricing</span></h3>
-                        <p class="color1">"We offer a variety of pricing packages to meet the unique needs of our freelancers. Contact <br class="show-destop"> us today to discuss which package is right for you.</p>
+                    <div class="tf-title-style4 center mb-77 wow d-rotate">
+                        <h3 class="title mb-24 rotate-text">Choose The <span>Plans & Pricing</span></h3>
+                        <p class="color1 wow fadeIn" data-wow-delay=".2s">"We offer a variety of pricing packages to meet the unique needs of our freelancers. Contact <br class="show-destop"> us today to discuss which package is right for you.</p>
                     </div> 
                 </div> 
                 <div class="col-md-12">
@@ -632,10 +658,10 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12">
-                    <div class="tf-title-style4 center mb-52 wow fadeIn" data-wow-delay=".2s">
-                        <h3 class="title mb-24">Trusted By 
+                    <div class="tf-title-style4 center mb-52 wow d-rotate">
+                        <h3 class="title mb-24 rotate-text">Trusted By 
                             <span>Professionals</span> <br> All Over The World</h3>
-                        <p class="color1">Here are some examples of successful SEO projects we've completed <br class="show-destop">for freelancers</p>
+                        <p class="color1 wow fadeIn" data-wow-delay=".2s">Here are some examples of successful SEO projects we've completed <br class="show-destop">for freelancers</p>
                     </div> 
                 </div> 
                 <div class="col-md-12 wow fadeIn" data-wow-delay=".2s">
@@ -694,10 +720,10 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12">
-                    <div class="cta-wrapper wow fadeIn" data-wow-delay=".2s">
-                        <div class="tf-title-style4 center mb-0 ">
-                            <h3 class="title mb-20">Take Control Of You Rankings</h3>
-                            <p class="color1 mb-42">Get Started With us and stay on top of your ranking in no time!</p>
+                    <div class="cta-wrapper">
+                        <div class="tf-title-style4 center mb-0 wow d-rotate">
+                            <h3 class="title mb-20 rotate-text">Take Control Of You Rankings</h3>
+                            <p class="color1 mb-42 wow fadeIn" data-wow-delay=".2s">Get Started With us and stay on top of your ranking in no time!</p>
                             <a href="#" class="tf-button">Contact Us</a>
                         </div> 
                     </div>
@@ -885,6 +911,21 @@
     
     $(".radius").on("input change",settingsChanged);
     $(".text").on("input change",settingsChanged);
+    </script>
+     <script>
+        const link = document.querySelectorAll('.hover-this');
+        const animateit = function (e) {
+            const hoverAnim = this.querySelector('.hover-anim');
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+            hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            if (e.type === 'mouseleave') hoverAnim.style.transform = '';
+        }; 
+        link.forEach(b => b.addEventListener('mousemove', animateit));
+        link.forEach(b => b.addEventListener('mouseleave', animateit)); 
     </script>
 </body>
 </html>

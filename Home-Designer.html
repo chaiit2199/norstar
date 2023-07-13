@@ -18,13 +18,13 @@
     <!-- <div class="cursor1"></div>
     <div class="cursor2"></div> -->
         <!-- preloade -->
-        <!-- <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div> -->
-        <!-- /preload -->
+        <div class="preload preload-container">
+            <p class="heading-preload" data-text="loading">loading</p>
+        </div>
+        <!-- preload -->
     <div id="wrapper">
         <!-- Header -->
-    <header id="header_main" class="header header-style2">
+    <header id="header_main" class="header header-style2 dark--white">
         <div class="container">
             <div id="site-header-inner">
                 <div class="header__logo">
@@ -34,7 +34,11 @@
                 <nav id="main-nav" class="main-nav">
                     <ul id="menu-primary-menu" class="menu">
                         <li class="menu-item menu-item-has-children  current-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#">
+                                <div class="menu-text">
+                                    <span>H</span><span>o</span><span>m</span><span>e</span>
+                                </div> 
+                            </a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="Home-Agency-Digital.html">Home-Agency-Digital</a></li>
                                 <li class="menu-item"><a href="Home-Agency-Creative.html">Home-Agency-Creative</a></li>
@@ -66,22 +70,46 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="#about">About</a> 
+                            <a href="#about">
+                                <div class="menu-text">
+                                    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#services">Services </a> 
+                            <a href="#services">
+                                <div class="menu-text">
+                                    <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+                                </div>      
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#project">Project</a> 
+                            <a href="#project">
+                                <div class="menu-text">
+                                    </span><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#testimonials">Testimonials</a> 
+                            <a href="#testimonials">
+                                <div class="menu-text">
+                                    <span>T</span><span>e</span><span>s</span><span>t</span><span>i</span><span>m</span><span>o</span><span>n</span><span>i</span><span>a</span><span>l</span><span>s</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#blog">Blog</a> 
+                            <a href="#blog">
+                                <div class="menu-text">
+                                    <span>B</span><span>l</span><span>o</span><span>g</span>
+                                </div>
+                            </a> 
                         </li>
                         <li class="menu-item">
-                            <a href="#">Contact</a>
+                            <a href="#">
+                                <div class="menu-text">
+                                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav><!-- /#main-nav -->
@@ -137,8 +165,8 @@
                 </div>
                 <div class="image-box img-animation wow">
                     <img src="./assets/images/common/page-title_2.jpg" alt="">
-                   <div class="content">
-                        <div class="box">
+                   <div class="content hover-this">
+                        <div class="box hover-anim">
                             <a href="#">Contact Us</a>
                             <svg viewBox="0 0 100 100" width="100" height="100">
                                 <defs>
@@ -168,9 +196,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="content-about col2 mb-40 flex align-items-end">
-                        <div class="tf-title-style4 wow fadeInUp" data-wow-delay=".2s">
-                            <p class="sub-title">Introduction</p>
-                            <h3 class="title mb-0">Hi, I'm Tony Nguyen!</h3>
+                        <div class="tf-title-style4 wow d-rotate">
+                            <p class="sub-title fadeIn" data-wow-delay=".2s">Introduction</p>
+                            <h3 class="title mb-0 rotate-text">Hi, I'm Tony Nguyen!</h3>
                         </div> 
                         <p class="desc wow fadeInUp" data-wow-delay=".2s">I'm a freelance UI/UX designer with over 7 years of experience in creating user-centric designs that delight users & business growth</p>
                     </div>
@@ -352,31 +380,31 @@
                     <div class="project-wrapper">
                         <div class="project-box-style2 wow fadeIn" data-wow-delay=".2s">
                             <h4 class="title js-project"><a href="#">Ma Biggidy - HR Manager Mobile App</a></h4>
-                            <a href="#" class="image js-project">
+                            <a href="#" class="image js-project hover-this">
                                 <img src="./assets/images/common/project_8.jpg" alt="">
-                                <span class="button style-2 center hover-circle"><span class="effect"></span><span  class="text">View Project</span></span>
+                                <span class="button style-2 center hover-circle hover-anim"><span class="effect"></span><span  class="text">View Project</span></span>
                             </a>
                         </div>
                         <div class="project-box-style2 active wow fadeIn" data-wow-delay=".4s">
                             <h4 class="title js-project"><a href="#">Study And Pass PTCB Exem 
                                 Website</a></h4>
-                            <a href="#" class="image js-project">
+                            <a href="#" class="image js-project hover-this">
                                 <img src="./assets/images/common/project_9.jpg" alt="">
-                                <span class="button style-2 center hover-circle"><span class="effect"></span><span  class="text">View Project</span></span>
+                                <span class="button style-2 center hover-circle hover-anim"><span class="effect"></span><span  class="text">View Project</span></span>
                             </a>
                         </div>
                         <div class="project-box-style2 wow fadeIn" data-wow-delay=".6s">
                             <h4 class="title js-project"><a href="#">Saas website for unique start-up brands</a></h4>
-                            <a href="#" class="image js-project">
+                            <a href="#" class="image js-project hover-this">
                                 <img src="./assets/images/common/project_10.jpg" alt="">
-                                <span class="button style-2 center hover-circle"><span class="effect"></span><span  class="text">View Project</span></span>
+                                <span class="button style-2 center hover-circle hover-anim"><span class="effect"></span><span  class="text">View Project</span></span>
                             </a>
                         </div>
                         <div class="project-box-style2 wow fadeIn" data-wow-delay=".8s">
                             <h4 class="title js-project"><a href="#">Wallet App - Crypto Trading Exchange</a></h4>
-                            <a href="#" class="image js-project">
+                            <a href="#" class="image js-project hover-this">
                                 <img src="./assets/images/common/project_11.jpg" alt="">
-                                <span class="button style-2 center hover-circle"><span class="effect"></span><span  class="text">View Project</span></span>
+                                <span class="button style-2 center hover-circle hover-anim"><span class="effect"></span><span  class="text">View Project</span></span>
                             </a>
                         </div>
                     </div> 
@@ -658,6 +686,21 @@
     
     $(".radius").on("input change",settingsChanged);
     $(".text").on("input change",settingsChanged);
+    </script>
+    <script>
+        const link = document.querySelectorAll('.hover-this');
+        const animateit = function (e) {
+            const hoverAnim = this.querySelector('.hover-anim');
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+            hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            if (e.type === 'mouseleave') hoverAnim.style.transform = '';
+        }; 
+        link.forEach(b => b.addEventListener('mousemove', animateit));
+        link.forEach(b => b.addEventListener('mouseleave', animateit)); 
     </script>
 </body>
 </html>
