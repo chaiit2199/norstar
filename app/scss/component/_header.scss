@@ -1,5 +1,7 @@
 @use '../abstracts/' as *;
 
+/* Header
+-------------------------------------------------------------- */
 .header.main {
     background: transparent;
 }
@@ -282,6 +284,9 @@
     }
 }
 #header_main.is-fixed {
+    &.header-style2 #main-nav .menu li a .menu-text {
+        text-shadow: 0 16px 0 $white;
+    }
     @include transition5;
     z-index: 999;
     opacity: 0;

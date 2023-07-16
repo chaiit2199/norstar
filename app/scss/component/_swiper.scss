@@ -1,8 +1,16 @@
 @use '../abstracts/' as *;
+
+/* Swiper
+-------------------------------------------------------------- */
 .swiper-container {
     &:hover {
         cursor: ew-resize
     }
+}
+
+.timing-function {
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
 }
 .swiper-pagination {
     @include flex(center,center);
@@ -154,4 +162,10 @@
 
 .mySwiper5 {
     overflow: visible;
+}
+
+.sl-brand-11 {
+    .swiper-slide {
+        width: auto !important;
+    }
 }

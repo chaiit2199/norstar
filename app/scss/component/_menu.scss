@@ -1,4 +1,7 @@
 @use '../abstracts/' as *;
+
+/* Menu
+-------------------------------------------------------------- */
 #main-nav-mobi-style2,
 #main-nav-mobi {
     @include translateY0;
@@ -210,21 +213,19 @@
 }
 /* Sub Menu */
 #main-nav .sub-menu {
-    padding: 60px;
-        margin: 0 auto;
-        @include flex(flex-start,space-between);
-        flex-wrap: wrap;
-        li {
-            width: calc((100% - 32px) / 3 )
-        }
+    padding: 28px 40px;
+    margin: 0 auto;
+    @include flex(flex-start,space-between);
+    flex-wrap: wrap;
+    li {
+        width: calc((100% - 60px) / 4 )
+    }
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     max-height: 500px;
-    overflow-y: auto;
-    background-color: $white;
-    box-shadow: $box-shadow;
+    overflow-y: auto; 
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -238,12 +239,14 @@
     -ms-transform: translateY(15px);
     -o-transform: translateY(15px);
     transform: translateY(15px);
+    background: #202020;
+    box-shadow: 0px 10px 25px 0px #2B344A1F;
     li {
         margin-right: 0;
         a {
             padding: 10px 20px; 
             opacity: 1;
-            color: $bg_2 !important;
+            color: $txt-color !important;
         }
         &:hover .sub-menu {
             z-index: 9;
@@ -257,8 +260,11 @@
         }
     }
     li.current-item a{
-        color: $color-hover !important;
+        color: $white !important;
         opacity: 1;
+        text-decoration-line: underline;
+        text-underline-offset: 6px;
+        text-decoration-color: $color-hover;
     }
 }
 

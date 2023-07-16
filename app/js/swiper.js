@@ -101,6 +101,7 @@ var swiper =  new Swiper(".sl-testimonial-5", {
 var swiper =  new Swiper(".sl-brand", {
     loop: true,
     freemode: true,
+    slidesPerView: 1,
     centeredSlides: true,
     allowTouchMove: false,
     speed: 2000,
@@ -108,9 +109,7 @@ var swiper =  new Swiper(".sl-brand", {
       delay: 1,
       disableOnInteraction: true,
     },
-
     
-    slidesPerView: 1,
     spaceBetween: 12,
     breakpoints: {
         0: {
@@ -509,6 +508,80 @@ var swiper =  new Swiper(".sl-brand-10", {
         1280: {
             slidesPerView: 5,
             spaceBetween: 0,
+        },
+    }
+}); 
+
+var swiper =  new Swiper(".sl-brand-12", {
+    loop: true, 
+    spaceBetween: 0,
+    speed: 2000,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: true,
+    },
+    slidesPerView: 1,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+        },
+        1600: {
+            slidesPerView: 4,
+            spaceBetween: 80,
+        },
+    }
+}); 
+
+var swiper =  new Swiper(".sl-brand-13", {
+    loop: true, 
+    spaceBetween: 0,
+    speed: 2000,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: true,
+    },
+    slidesPerView: 1,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+        1600: {
+            slidesPerView: 4,
+            spaceBetween: 50,
         },
     }
 }); 

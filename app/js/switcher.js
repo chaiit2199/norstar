@@ -21,6 +21,10 @@ window.console =
 $(document).ready(function () {
   var e =
     '<div class="switcher-container">' +
+    '<select name="cursor-style" id="cursor_style">' +
+    '<option value="1">default</option>' +
+    '<option selected="" value="2">animated</option>' +
+    '</select>' +
     '<h2>Setting<a href="#" class="sw-click"><img src="assets/images/icon/icon_setting.svg" class="setting setting_dark"></img><img src="assets/images/icon/icon_setting_white.svg" class="setting setting_light"></img></a></h2>' +
     '<div class="selector-box">' +
     '<div class="clearfix"></div>' +

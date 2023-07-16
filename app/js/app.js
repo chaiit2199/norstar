@@ -472,6 +472,8 @@
         });
     };
 
+
+
     var Preloader = function () {
         setTimeout(function () {
         $(".preload").fadeOut("slow", function () {

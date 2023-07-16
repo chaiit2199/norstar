@@ -1,5 +1,7 @@
 @use '../abstracts/' as *;
 
+/* Footer
+-------------------------------------------------------------- */
  .flat-tabs {
     .menu-tab {
         @include flex(flex-start,flex-start);
@@ -83,12 +85,15 @@
     }
 
     .menu-tab {
-        @include flex(flex-start,space-between);
         li {
             font-size: 24px;
             line-height: 44px;
             color: $bg_2;
             position: relative;
+            margin-right: 38px;
+            &:last-child {
+                margin-right: 0;
+            }
             &::after {
                 position: absolute;
                 content: "";
