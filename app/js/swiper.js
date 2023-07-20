@@ -20,7 +20,7 @@ var swiper =  new Swiper(".banner_26", {
     loop: true, 
     speed: 2000,
     autoplay: {
-      delay: 1,
+      delay: 2,
       disableOnInteraction: true,
     },
     spaceBetween: 0, 
@@ -626,10 +626,7 @@ var swiper =  new Swiper(".sl-project-2", {
     slidesPerView: 1,
     loop: true, 
     spaceBetween: 0,
-    autoplay: {
-        delay: 1,
-    }, 
-    speed: 2000,
+    autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -682,6 +679,29 @@ var swiper =  new Swiper(".sl-testimonial-2", {
         clickable: true,
     },
 }); 
+var swiper =  new Swiper(".sl-testimonial-22", {
+    slidesPerView: 1,
+    loop: false,  
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        767: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        }, 
+        1600: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 
 
 var swiper =  new Swiper(".sl-testimonial-3", {
     slidesPerView: 1,
@@ -717,8 +737,12 @@ var swiper =  new Swiper(".sl-testimonial-3", {
 
 var swiper =  new Swiper(".sl-testimonial-4", {
     slidesPerView: 1,
-    loop: false,  
+    loop: true,  
     spaceBetween: 30,
+    autoplay: {
+        delay: 1, 
+    }, 
+    speed: 2000,
     breakpoints: {
         0: {
             slidesPerView: 1,

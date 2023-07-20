@@ -219,10 +219,7 @@
         .box {
             width: calc((100% - 30px) / 2);
         }
-    }
-    .home24 .header .main-nav {
-        left: 25%;
-    }
+    } 
     .page-title.style13 .content-box .content .title.animationtext.clip .cd-words-wrapper::after {
         top: 4px;
     }
@@ -304,7 +301,6 @@
     }
     .experience-content {
         width: 1200px;
-        overflow-x: auto;
         &::-webkit-scrollbar {
             display: none;
           }
@@ -352,9 +348,70 @@
             padding-right: 15px;
         }
     }
+    .home2 {
+        .counter_wrapper .box .content .box-couter .number-content {
+            font-size: 32px;
+        }
+    }
 }
 
-@include res991 {
+@include res991 { 
+    .home2 {
+        .counter_wrapper.style2 {
+            .overlay {
+                display: none;
+            }
+            margin-top: 30px; 
+
+        }
+        &.is_dark {
+            .box .content {
+                .box-couter .number-content span {
+                    color: $white !important;
+                }
+                .box-couter .number-content,
+                .desc {
+                    color: $white;
+                }
+            }
+        }
+    }
+    #header_main.is-fixed.is-fixed.is-small .social {
+        display: none !important;
+    }
+    .home8 {
+        .tf-section.pd0 {
+            padding-top: 70px;
+        }
+    }
+    .section-about.style2 .button {
+        padding: 14px 24px;
+    }
+    .post-wrapper .tf-post .image img {
+        height: auto;
+    }
+    .home3 .service-wrapper {
+        flex-wrap: wrap;
+        .service-box-style3 {
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 30px;
+        }
+    }
+    .home10 {
+        .pr-105 {
+            padding-right: 15px;
+        }
+        .pl-55 {
+            padding-left: 15px;
+        }
+    }
+    #footer .footer-content {
+        padding-right: 0;
+    }
+    #footer .footer-form form {
+        max-width: 100%;
+        margin-top: 30px;
+    }
     .tf-partner .container {
         padding: 0 15px;
     }
@@ -927,9 +984,162 @@
     .pl-90 {
         padding-left: 0;
     }
+    .home23 .flat-tabs .content-tab {
+        border-right: 0;
+        border-left: 0;
+    }
+    .home20 {
+        .is_dark,
+        #header_main.is-fixed.is-fixed.is-small {
+            .mobile-button {
+                &.style2 {
+                    span,
+                    &::after,
+                    &::before {
+                        background: $bg_2 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include res767 {
+    .home25 .header.header-main-nav .mobile-button {
+        bottom: 15px;
+    }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .flat-tabs .content-tab .content-inner .box:last-child {
+        margin-bottom: 0;
+    }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner#services .wrapper_service .box-style2 {width: 100%;}
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .counter_wrapper .box {
+        margin-bottom: 0px !important;
+    }
+    .home14 {
+        .section-about {
+            margin: 0;
+        }  
+    }
+    .page-title.style3 {
+        padding: 100px 0;
+    }
+    .mobile-mb50 {
+        margin-bottom: 50px;
+    }
+    .home9 .tf-partner .container, .tf-partner .container {
+        padding: 0 15px;
+    }
+    .home9 .tf-partner .swiper-container, .tf-partner .swiper-container {
+        padding-right: 40px;
+    }
+    #main-nav-mobi-style2 ul li, #main-nav-mobi ul li {
+        border: none;
+    }
+    .home16 .tf-cta .cta-wrapper {
+        padding: 30px 15px;
+    } 
+    .page-title.style12 {
+        padding-top: 150px;
+    }
+    .home22 #footer {
+        padding-top: 50px !important;
+    }
+    .home17 .dashboard-style2 #side-bar-dashboard .info-style2 .social li {
+        margin: 0px 8px;
+    }
+    .home17 .dashboard-style2 #side-bar-dashboard .info-style2 {
+        overflow-x: hidden;
+    }
+    .home17 .dashboard-style2 #side-bar-dashboard .info-style2 {
+        margin-left: 0;
+    }
+    .home17 .article-dashboard .body-dashboard .section-inner .wrapper.mb-40 {
+        margin-bottom: 0 !important;
+    }
+    .what_i_do_wrap .box:last-child,
+    .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .flat-tabs .content-tab .content-inner .box:last-child,
+    .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box .content-progress-box:last-child {
+        margin-bottom: 0;
+    }
+    .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box {
+        width: 100%;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .home19 .testimonials-box {
+        padding: 20px 15px;
+    }
+    .home12 {
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box .content-progress-box {
+            margin-top: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box {
+        width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .article-dashboard .body-dashboard .section-inner .title span {
+        font-size: 48px;
+    }
+    .dashboard-style2 #side-bar-dashboard .info-style2 {
+        padding: 20px 15px;
+    }
+    .home12 .dashboard-style2 #side-bar-dashboard .info-style2 .social li {
+        margin: 0;
+    }
+    .home24 .header #site-header-inner .header__logo {
+        padding-left: 0;
+    }
+    .home24 .mobile-button {
+        right: 0;
+    }
+    .page-title.style8 .content-box .content {
+        padding-right: 0;
+    }
+    #footer .footer-content .title {
+        font-size: 68px;
+        line-height: 1.2;
+    }
+    .home11 {
+        .swiper_vertical .swiper:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+    .page-title.style5 .content-box .content form button {
+        padding: 13px 20px;
+    }
+    .page-title.style18 .content-box .content {
+        padding: 0;
+    }
+    .service-box-style2 {
+        border-top: 8px solid #BBADFF;
+    }
+    .home2 .tf-section.tf-about {
+        padding-bottom: 40px !important;
+    }
+    .home3 .service-wrapper {
+        .service-box-style3 {
+            width:100%;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .home8 {
+        .section-about .tf-title .title {
+            font-size: 40px;
+        }
+    }
+ 
+    .home8 .tf-section.tf-blog {
+        padding-bottom: 250px !important;
+    }
     .home23 #footer .footer-content {
         display: block;
         text-align: center;
@@ -1718,7 +1928,7 @@
         }
     }
     .section-about.tf-section {
-        padding: 30px !important;
+        padding: 15px !important;
     }
     .home3 .tf-section.tf-blog {
         padding-bottom: 200px !important;
@@ -1770,10 +1980,7 @@
             left: 0;
         }
     }
-    #footer .footer-form form {
-        max-width: 100%;
-        margin-top: 30px;
-    }
+
     #footer .footer-content {
         padding-right: 0;
     }
@@ -2070,10 +2277,25 @@
     .home25 .header #site-header-inner {
         padding: 16px 0;
     }
+    .number-box-wrapper .number-box {
+        width: 100%;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 
 @include res600 {
+    .tf-title-style4 h3.title,
+    .tf-title-style4 h3.title.white {
+        font-size: 32px;
+    }
+    .home13 .article-dashboard .body-dashboard .section-inner .list_contact li {
+        width: auto;
+        margin-bottom: 0;
+    }
     .tf-about .menu-tab li {
         margin-right: 10px;
     }
@@ -2264,6 +2486,15 @@
 }
 
 @include res500 {
+    .page-title.style8 .content-box .content .counter_wrapper {
+        display: block;
+    }
+    .counter_wrapper.style2 .box {
+        width: 100%;
+    }
+    .home8 #footer {
+        margin-top: -100px;
+    }
     .feature-wrapper {
         padding: 32px 20px 0px;
         .feature-box {
@@ -2312,7 +2543,7 @@
     .user-dashboard {
         padding: 24px;
         .info-social .social li {
-            margin-right: 8px;
+            margin-right: 6px;
         }
         .info {
 

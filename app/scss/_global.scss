@@ -25,9 +25,18 @@ body {
     line-height: 30px;
     font-weight: 400;
     color: $txt-color; 
+    .fs-20 {
+        font-size: 20px;
+    }
 }
 
+.overflow-x-auto {
+    overflow-x: auto;
+}
 
+.overflow-x-auto::-webkit-scrollbar {
+    display: none;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -623,6 +632,7 @@ input[type="color"]::placeholder {
   }
   
   .switcher-container h2 {
+    border-radius: 12px 0 0 0;
     @include transition3;
     color: #fff;
     font-family: $font-main-4;
@@ -632,12 +642,10 @@ input[type="color"]::placeholder {
     line-height: 40px;
     padding: 20px 28px 32px;
     background-color: #000000;
-    border-radius: 12px 0 0 0;
   }
   
-  .switcher-container h2 a {
+.switcher-container h2 a {
     background-color: $bg_2;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -652,8 +660,42 @@ input[type="color"]::placeholder {
     color: #fff;
     border-radius: 4px 0px 0px 4px;
 
-  }
+} 
+
+.switcher__item {
+    background-color: #000000;
+    padding: 0 0 28px 28px;
+    @include transition3;
+}
+
+.is_dark {
+    .switcher__item {
+        background-color: #fff;
+        .switcher__title {
+            color: $bg_2;
+        }
+    }
+}
+
   
+  .switcher__btn {
+    background-color: #000;
+    margin-right: 12px;
+    select {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $white;
+        width: 100%;
+        border: none;
+        padding: 9px 10px;
+        background: #2B2B2F;
+        text-transform: capitalize;
+        outline: none;
+        cursor: pointer;
+    }
+    
+  }
   .switcher-container h2 a:hover,
   .switcher-container h2 a:focus {
     text-decoration: none;
@@ -972,7 +1014,46 @@ img.dark {
 }
 
 
-.is_dark {  
+.is_dark { 
+    .service-box-style5 .content .title {
+        color: $white;
+    }
+    &.home11 .tf-section.faq {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 61.65%);
+    }
+    .feature-box .content .title {
+        color: $white;
+    } 
+    &.home22 .flat-tabs .menu-tab li {
+        &.active {
+            span {
+                border-color: $white;
+            }
+            color: $white;
+        }
+        color: $txt-color;
+    }
+    #side-bar-dashboard .info .bootom {
+        color: $txt-color;
+    }
+    &.home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact form fieldset button  {
+        &:hover {
+            span {
+                color: $bg_2;
+            }
+        }
+    }
+    .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact form .tf-button {
+        &:hover {
+            background-color: $white;
+            color: $bg_2;
+            border-color: $white;
+        }
+    }
+    .page-title.style5 .content-box .content .title,
+    .page-title.style3 .content-box .content .title {
+        color: $white;
+    }
     .header-style2.dark--white #main-nav .menu li a .menu-text {
         text-shadow: 0 16px 0 $white;
     }
@@ -1060,6 +1141,9 @@ img.dark {
         display: block;
     }
     &.home4 {
+        .about-box .content h5 {
+            color: $white;
+        }
         .button.style2 {
             &:hover {
                 background-color: $color-hover !important;
@@ -1078,6 +1162,12 @@ img.dark {
         }
     }
     &.home13 {
+        .dark.social {
+            display: flex;
+        }
+        .light.social {
+            display: none;
+        }
         background-color: #000;
         .article-dashboard .menu-dashboard ul.style2 {
             background-color: $bg_2;
@@ -2240,8 +2330,19 @@ img.dark {
             }
         }
     }
-    &.home6 {
+    &.home6 { 
+        .article-dashboard::before {
+            display: none;
+        }
         background-color: $black;
+        .article-dashboard .body-dashboard .section-inner#Service .box {
+            &:hover {
+                h5,
+                p {
+                    color: $bg_2 !important;
+                }
+            }
+        }
     }
     .project-box-style5 {
         border-color: $white;

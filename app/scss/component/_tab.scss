@@ -114,7 +114,6 @@
 
  
 #tab--content {
-	overflow: hidden;
 	position: relative;
 }
 
@@ -128,11 +127,29 @@
 	-moz-transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
     box-sizing: border-box;
-	transition: all ease-in-out .6s;
-	-moz-transition: all ease-in-out .6s;
-	-webkit-transition: all ease-in-out .6s;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
     opacity: 0;
     visibility: hidden;
+    .image {
+        .icon {
+            opacity: 0;
+            visibility: hidden; 
+
+        }
+    }
+    &.tab-active {
+        .image {
+            .icon {
+                transition: all .8s ease 0s;
+                opacity: 1;
+                visibility: visible;
+                -webkit-transform: rotate(15deg) translateY(0);
+                transform: rotate(15deg) translateY(0);
+            }
+        }
+    }
 }
 
 .tabcontent:first-child {

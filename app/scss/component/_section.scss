@@ -1443,7 +1443,7 @@
         .content {
             position: absolute;
             left: 48px;
-            bottom: 48px;
+            bottom: 250px;
             h3 {
                 font-size: 32px;
                 font-family: $font-main-4;
@@ -1856,7 +1856,8 @@
         width: 40px;
         height: 100px;
         background-color: $color-hover;
-        transform: rotate(15deg);
+        -webkit-transform: rotate(15deg) translateY(-120px);
+        transform: rotate(15deg) translateY(-120px);
         top: 3px;
         right: 30px;
         &.style2 {
@@ -2019,6 +2020,7 @@
     .graphic_1 {
         top: 0;
         right: 0;
+        z-index: -1;
     }
     .graphic_2 {
         bottom: 0;
@@ -3459,7 +3461,7 @@
                     font-size: 12px;
                     line-height: 20px;
                     font-family: $font-main-1;
-                    color: $white;
+                    color: $white !important;
                     letter-spacing: 1px;
                 }
             }
@@ -4214,8 +4216,9 @@
                             border: 1px solid #3BBB67;
                             @include transition3;
                             &:hover {
-                                background-color: transparent;
+                                background-color: $bg_2;
                                 color: $white;
+                                border-color: $bg_2;
                             }
                         }
                     }

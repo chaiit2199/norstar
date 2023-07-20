@@ -186,12 +186,7 @@
     &:hover {
         .number {
             color: $color-hover;
-        }
-        .content {
-            .title {
-                color: $white;
-            }
-        }
+        } 
         .icon {
             svg {
                 path {
@@ -382,8 +377,16 @@
         box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
         border-color: transparent;
     }
+    &:hover {
+        .icon {
+            transform: rotateY(-360deg);
+        }
+    }
     .icon {
+        max-width: 53px;
         margin-bottom: 20px;
+        transform: rotateY(0);
+        transition: all 0.8s ease;
     }
     .content {
         .title {
@@ -851,6 +854,7 @@
         width: 34%;
     }
 }
+ 
 
 .wrapper-blog {
     @include flex(flex-start, space-between);
@@ -885,12 +889,37 @@
     }
 }
 
+.hover_effect {
+    &.image {
+        overflow: hidden;
+        img {
+            transform: scale(1.05);
+            width: 100%; 
+            -webkit-transform: rotate(5deg) scale(1.2);
+            transform: rotate(5deg) scale(1.2);
+            -webkit-transition: .4s ease-in-out;
+            transition: .4s ease-in-out;
+        }
+        &:hover { 
+            img { 
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+            }
+        }
+    }
+}
+
 .tf-post {
     &:hover {
         .image {
             &::before {
                 opacity: 1;
                 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            }
+            overflow: hidden;
+            img { 
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
             }
         }
     }
@@ -914,7 +943,12 @@
         }
         margin-bottom: 30px;
         img {
-            width: 100%;
+            transform: scale(1.05);
+            width: 100%; 
+            -webkit-transform: rotate(5deg) scale(1.2);
+            transform: rotate(5deg) scale(1.2);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
         }
     }
     .content {
@@ -1794,7 +1828,7 @@
 
 
 .roadmad-box {
-    margin-bottom: 92px;
+    margin-bottom: 90px;
     position: relative; 
     &:last-child {
         margin-bottom: 0;
