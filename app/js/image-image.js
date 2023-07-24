@@ -14,5 +14,5 @@ var myFunction = function() {
 
 for(var index=0;index<tabs.length;index++){
 	tabs[index].mynum=index;
-	tabs[index].addEventListener('click', myFunction, false);
+	tabs[index].addEventListener('mouseover', myFunction, false);
 }

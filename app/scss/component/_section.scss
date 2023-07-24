@@ -692,7 +692,7 @@
                 .button-style {
                     height: 54px;
                     .btn-main {
-                        padding: 12px 32px;
+                        padding: 14px 32px;
                         height: 54px;
                     }
                 }
@@ -728,6 +728,10 @@
                     .btn-main {
                         background-color: $bg_12;
                         color: $white;
+                        &:hover {
+                            background-color: $white;
+                            color: $bg_2;
+                        }
                     }
                     .btn-absolute {
                         display: none;
@@ -868,7 +872,7 @@
                         }
                         height: 56px;
                         .btn-main {
-                            padding: 15px 25px;
+                            padding: 13px 25px;
                             min-width: 152px;
                             height: 56px;
                             border-radius: 10px;
@@ -1288,6 +1292,10 @@
                             line-height: 32px;
                             text-transform: capitalize;
                             color: $bg_2;
+                            &:hover {
+                                background-color: $bg_2;
+                                color: $white;
+                            }
                         }
                     }
                 }
@@ -1314,9 +1322,7 @@
                         width: 40%;
                         padding-left: 20px;
                     }
-                    p {
-                        font-weight: 700;
-                        text-transform: capitalize;
+                    p { 
                         &:nth-child(1) {
                             font-size: 12px;
                             line-height: 20px;
@@ -1422,6 +1428,7 @@
         padding: 0;
         background-color: transparent;
         .banner_26 {
+            height: 100vh;
             .swiper-wrapper {
                 .swiper-slide {
                     .image {
@@ -3316,7 +3323,7 @@
                         text-transform: capitalize;
                         &:hover {
                             background-color: transparent;
-                            color: $bg_2;
+                            color: #EE37B4;
                         }
                     }
                 }
@@ -3599,7 +3606,7 @@
     }
     .right {
         padding-left: 60px;
-        padding-top: 160px;
+        padding-top: 162px;
     }
 }
 

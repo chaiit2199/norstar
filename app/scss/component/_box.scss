@@ -170,6 +170,7 @@
     .content {
         padding-right: 14%;
         .title {
+            @include transition3;
             color: $txt-color;
             text-transform: capitalize;
             margin-bottom: 8px;
@@ -282,14 +283,7 @@
     }
     .icon {
         margin-bottom: 24px; 
-        @include flex(flex-start,space-between);
-        .img {
-            -webkit-transition: all 0.8s ease;
-            -moz-transition: all 0.8s ease;
-            -ms-transition: all 0.8s ease;
-            -o-transition: all 0.8s ease;
-            transition: all 0.8s ease;
-        }
+        @include flex(flex-start,space-between); 
     }
     .content {
         .title {
@@ -297,10 +291,7 @@
         }
     }
     &:hover {
-        .icon {
-            .img {
-                transform: rotateY(360deg);
-            }
+        .icon { 
             a {
                 transform: translate3d(10px,-10px,-10px);
             }
@@ -354,7 +345,6 @@
         }
     }
 
-    &.active,
     &:hover {
         border-color: $bg_6;
     } 
@@ -1276,7 +1266,6 @@
     position: relative;
     border-bottom: 4px solid transparent; 
     @include transition3;
-    &.active,
     &:hover {
         border-color: #3C60DC; 
     }
@@ -1828,7 +1817,7 @@
 
 
 .roadmad-box {
-    margin-bottom: 90px;
+    margin-bottom: 92px;
     position: relative; 
     &:last-child {
         margin-bottom: 0;
@@ -1927,7 +1916,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(6px);
     border-radius: 12px;
-    padding: 24px;
+    padding: 24px 24px 20px;
     .image {
         margin-bottom: 16px;
         border-radius: 8px;

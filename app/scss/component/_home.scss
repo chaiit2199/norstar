@@ -302,6 +302,11 @@
     .container {
         max-width: 1200px;
     }
+    .animationtext.clip .cd-words-wrapper::after {
+        background-color: #FFD84F;
+        height: 60%;
+        top: 20px;
+    }
 }
 .home7 {
     .header {
@@ -998,7 +1003,11 @@
     }
 }
 .home11 {
-
+    &.is_light {
+        .flat-accordion.style2 .flat-toggle::after {
+            background-color: $white;
+        }
+    }
     .flat-accordion.style2 .flat-toggle {
         box-shadow: 0px 10px 25px 0px #273F441A;
     }
@@ -1136,10 +1145,10 @@
     
     .tf-section {
         &.faq {
-            padding-top: 14px;
+            padding-top: 20px;
         }
         &.tf-team {
-            padding-bottom: 80px;
+            padding: 98px 0 80px;
         }
         &.tf-brand {
             padding: 20px 0 80px;
@@ -1168,7 +1177,7 @@
             }
         } 
         &.tf-banner {
-            padding-top: 70px;
+            padding-top: 66px;
         }
     }
     #footer {
@@ -1334,6 +1343,19 @@
     }
 }
 .home13 {
+    #Service {
+        .button.hover-circle {
+            background-color: $white;
+            color: $bg_2;
+            &:hover {
+                background-color: #EE37B4;
+                color: $white;
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
     .dark.social {
         display: none;
     }
@@ -1424,6 +1446,9 @@
                 background: #EE37B4;
                 border-radius: 8px;
                 color: $white;
+                &:hover {
+                    background-color: $bg_2;
+                }
                     img {
                         margin-right: 12px;
                     }
@@ -1567,6 +1592,10 @@
         .button-style.style1 .btn-main {
             background-color: $bg_12;
             color: $white;
+            &:hover {
+                background-color: $white;
+                color: $bg_2;
+            }
         }
     }
     .section-about.tf-section {
@@ -1580,6 +1609,11 @@
         }
         .btn-main {
             border-color: $white;
+            &:hover {
+                background-color: $bg_2;
+                color: $white;
+                border-color: $bg_2
+            }
         }
     }
     .testimonials-box {
@@ -2169,7 +2203,7 @@
     }
 }
 
-.home17 {
+.home17 { 
     .article-dashboard {
         height: 100vh;
         overflow-y: auto;
@@ -2177,6 +2211,14 @@
     .header {
         position: fixed;
         background-color: $white;
+        #site-header-inner .tf-button {
+            &.bg_9 {
+                &:hover {
+                    background-color: $bg_2;
+                    color: $white;
+                }
+            }
+        }
     }
     &.is_light {
         .dashboard-style2 #side-bar-dashboard .info-style2 .tf-button {
@@ -2328,6 +2370,10 @@
                         font-family: $font-main-1;  
                         font-weight: 700;
                     }
+                    &:hover {
+                        background-color: $bg_2;
+                        color: $white;
+                    }
                 }
                 &#Contact {
                     padding: 32px 0 40px;
@@ -2383,6 +2429,10 @@
                                 font-size: 16px;
                                 line-height: 26px;
                                 font-family: $font-main-1;  
+                            }
+                            &:hover {
+                                background-color: $bg_2;
+                                color: $white;
                             }
                         }
                     }
@@ -3705,6 +3755,12 @@
             padding: 12px 22px;
             font-size: 16px;
             line-height: 26px;
+            @include transition3;
+            &:hover {
+                background-color: $bg_2;
+                border-color: $bg_2;
+                color: $white;
+            }
         }
         button {
             background-color: #5EDDA0;
@@ -4339,12 +4395,7 @@
                         font-size: 16px;
                         line-height: 26px;
                         color: $bg_2;
-                    } 
-                    &:hover {
-                        h5 {
-                            color: #5EDDA0;
-                        }
-                    }
+                    }  
                 }
             }
         }
@@ -4424,9 +4475,10 @@
             display: flex;
         }
     } 
-    .button-style.style3 {
+    .button.style2 {
         height: 60px;
         border-radius: 30px;
+        padding: 0;
         .btn-main {
             height: 60px;
             background: #F48D62;
@@ -4438,11 +4490,7 @@
             text-transform: capitalize;
             @include flex(center,center);
             border-radius: 30px;
-            padding: 10px 28px;
-
-            img {
-                margin-left: 7px;
-            }
+            padding: 10px 23.5px; 
         }
     }
     .mySwiper6 {
@@ -4535,9 +4583,10 @@
     .tf-artwork {
         background: url('./../../assets/images/backgroup/bg_artwork.png') center center no-repeat;
         background-size: cover;
-        .button-style.style3 {
+        .button.style3 {
             height: 60px;
             border-radius: 30px;
+            background-color: transparent;
             .btn-main {
                 height: 60px;
                 background: transparent;
@@ -4553,14 +4602,10 @@
                 padding: 10px 30px;
                 margin-top: -5px;
                 svg {
-                    margin-left: 6px;
                     path {
                         fill: $bg_2;
                     }
-                }
-                img {
-                    margin-left: 6px;
-                }
+                } 
             }
         }
     }
@@ -5326,11 +5371,9 @@
     }
     .wrapper_project {
         @include flex(inherit,space-between);
-        .box {
-            width: calc((100% - 90px) / 4);
+        .box { 
             position: relative;
             overflow: hidden;
-            &.active,
             &:hover {
                 .content {
                     opacity: 1;
@@ -5531,6 +5574,14 @@
     }
 }
 .home27 {
+    #main-nav .menu li a::before {
+        background-color: #5EDDA0;
+    }
+    a {
+        &:hover {
+            color: #5EDDA0;
+        }
+    }
     .tf-title-style4 h3.title {
         color: $white;
     }

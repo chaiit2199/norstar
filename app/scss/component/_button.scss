@@ -58,21 +58,50 @@ $hover-margin: -($spacing-3 - 2);
         width: auto;
         font-family: $font-main-1;
         font-size: 16px;
+        .icon {
+            position: relative;
+            margin-left: 12px;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            svg,
+            img {
+                position: absolute;
+                top: 1px;
+                &.show {
+                    opacity: 0;
+                    visibility: hidden; 
+                    transform: translateX(-100%);
+                } 
+            }
+        }
         &:hover {
             background-color: $bg_2;
             color: $white;
-            svg,
-            img {
-                transform: translate3d(5px,-5px,-5px);
+            .icon {
+                svg,
+                img {
+                    &.show {
+                        opacity: 1;
+                        visibility: visible;
+                        @include transition3;
+                        transform: translateX(0);
+                    }
+                    &.effect {
+                        transform: translateX(100%);
+                        @include transition3;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
             }
+     
         }
         svg {
             @include transition3;
-            margin-left: 12px;
         }
         img {
             @include transition3;
-            margin-left: 12px;
         }
     }
     &.style3 {
@@ -207,6 +236,9 @@ $hover-margin: -($spacing-3 - 2);
         .btn-main {
             background-color: $color-hover; 
             border: 2px solid $bg_2;
+            &.border-none {
+                border: none;
+            }
         }  
     }
     &.style4 { 
@@ -247,12 +279,46 @@ $hover-margin: -($spacing-3 - 2);
             background-color: $color-hover; 
             border-radius: 0;
             text-transform: uppercase;
-            @include flex(center,center);
+            @include flex(center,center); 
+        }  
+        .icon {
+            position: relative;
+            margin-left: 12px;
+            width: 28px;
+            height: 16px;
+            display: flex;
             svg,
             img {
-                margin-left: 16px;
+                position: absolute;
+                top: 1px;
+                @include transition3; 
+                &.show {
+                    opacity: 0;
+                    visibility: hidden; 
+                    transform: translateX(-100%);
+                } 
             }
-        }  
+        }
+        &:hover {
+            .icon {
+                svg,
+                img {
+                    &.show {
+                        opacity: 1;
+                        visibility: visible;
+                        @include transition3;
+                        transform: translateX(0);
+                    }
+                    &.effect {
+                        transform: translateX(100%);
+                        @include transition3;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+     
+        }
         &:hover {
             .btn-main {
                 transform: translate3d(6px, 6px ,6px);
@@ -260,7 +326,15 @@ $hover-margin: -($spacing-3 - 2);
             .btn-absolute {border-radius: 0px;}
         }
     }
+    &.not-move {
+        &:hover {
+            .btn-main {
+                transform: translate3d(0, 0 ,0);
+            }
+        }
+    }
     &:hover {
+        
         .btn-main {
             transform: translate3d(6px, 6px ,6px);
         }

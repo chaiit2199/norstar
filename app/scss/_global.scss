@@ -1017,10 +1017,7 @@ img.dark {
 .is_dark { 
     .service-box-style5 .content .title {
         color: $white;
-    }
-    &.home11 .tf-section.faq {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 61.65%);
-    }
+    } 
     .feature-box .content .title {
         color: $white;
     } 
@@ -1061,8 +1058,24 @@ img.dark {
     .page-title.style4 .content-box .content .title {
         color: $white;
     }
-    &.home17 .header {
-        background-color: $bg_2;
+    &.home17 {
+        .header {
+            background-color: $bg_2;
+            #site-header-inner .tf-button {
+                &.bg_9 {
+                    &:hover {
+                        background-color: $white;
+                        color: $bg_2;
+                    }
+                }
+            }
+        }
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner .tf-button {
+            &:hover {
+                background-color: $white;
+                color: $bg_2;
+            }
+        }
     }
     &.home12 {
         .dashboard-style2 .article-dashboard .body-dashboard .section-inner .my_skill .my_skill_box .progress-content-outter {
@@ -1162,6 +1175,13 @@ img.dark {
         }
     }
     &.home13 {
+        #side-bar-dashboard .info .tf-button {
+            border: 2px solid #EE37B4;
+            padding: 9px 24px;
+            &:hover {
+                border: 2px solid $white;
+            }
+        }
         .dark.social {
             display: flex;
         }
@@ -1283,6 +1303,11 @@ img.dark {
       
         .page-title.style14 .content-box .info .social li a {
             border-color: $txt-color;
+            &:hover {
+                background-color: $white;
+                border-color: $white;
+                color: $bg_2;
+            }
         }
         .header #main-nav .menu li {
             a {
@@ -1404,6 +1429,11 @@ img.dark {
             border-color: #3BBB67;
             background-color: #3BBB67;
             color: $white;
+            &:hover {
+                background-color: $white;
+                color: $bg_2;
+                border-color: $white;
+            }
         }
         .contact-inner {
             background-color: $bg_2;

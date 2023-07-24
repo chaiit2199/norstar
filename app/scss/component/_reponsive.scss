@@ -494,16 +494,9 @@
         .tf-project {
             width: 100%;
         }
-    }
-    .page-title.style14 .content-box {
-        padding-bottom: 0;
-    }
+    } 
     .home24 .wrapper_project {
-        flex-wrap: wrap;
-        .box {
-            margin-top: 30px;
-            width: calc((100% - 30px) / 2);
-        }
+        flex-wrap: wrap; 
     }
     .home24 .container,
     .home24 .page-title .container {
@@ -1005,6 +998,10 @@
 }
 
 @include res767 {
+    .page-title.style12 .content-box .content .animationtext.clip .cd-words-wrapper::after {
+        top: 10px;
+    }
+ 
     .home25 .header.header-main-nav .mobile-button {
         bottom: 15px;
     }
@@ -1424,7 +1421,7 @@
         }
     }
     .page-title.style12 .content-box .content h5 {
-        font-size: 40px;
+        font-size: 32px;
     }
     .hide_mobie {
         display: none;
@@ -2008,7 +2005,7 @@
     .page-title .content-box {
         .content { 
             .title {
-                font-size: 50px !important;
+                font-size: 36px !important;
             }
         }
     }
