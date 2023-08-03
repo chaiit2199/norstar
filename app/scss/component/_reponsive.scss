@@ -12,8 +12,14 @@
 @include res1760 {  
 }
 @include res1600 {  
+    .page-title.style19 .content-box .content {
+        padding: 100px 50px 0 0;
+    }
 }
 @include res1440 { 
+    .home-demo .swiper_vertical .item.bg-2 img {
+        min-width: auto;
+    }
     .home23 .page-title.style13 {
         width: 100%;
     }
@@ -85,10 +91,7 @@
     }
     .home18 .dashboard-style2 .article-dashboard {
         padding: 0px 15px 0 ;
-    }
-    .home18 .dashboard-wapper .article-dashboard {
-        width: 100%;
-    }
+    } 
     .home17 .dashboard-style2 .article-dashboard .body-dashboard {
         .section-inner.page .content ul {
             padding-left: 25px;
@@ -155,41 +158,12 @@
             }
         }
     } 
-    .home18 .menu_dasboard,
     .home14 .menu_dasboard {
         .close_dashboard {
             display: block;
         }
         padding-bottom: 30px;
-    } 
-    .home18,
-    .home14 {
-        .menu_dasboard {
-            @include transition3;
-            position: fixed;
-            left: -100%;
-            top: 0;
-            opacity: 0;
-            visibility: hidden;
-            height: 100vh;
-            overflow-y: auto;
-            z-index: 999999999999;
-            display: block;
-            .close_dashboard {
-                display: block;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                width: 25px;
-                svg {
-                    path {
-                        font-size: 20px;
-                        fill: $white;
-                    }
-                }
-            }
-        }
-    }
+    }  
 
     .post-wrapper .tf-post .image {
         height: auto;
@@ -204,16 +178,89 @@
     } 
     .section-about {
         margin: 0 15px;
-    }
-    .home14.style2 .menu_dasboard {
-        position: fixed;
-        .fixel_menu {
-            position: inherit;
-        }
-    }
+    } 
 }
 
 @include res1200 {
+    .home-demo .padding-0-115 {
+        padding: 0;
+    }
+    .home-demo .warpper-icon-box.col6 .icon-box {
+            width: calc((100% - 80px) / 3);
+    }
+    .user-dashboard .info {
+        width: 60%;
+    }
+    .modal-menu .popup-menu.modal .modal-content .list {
+        padding-left: 30px;
+    }
+    .home14.style2 {
+        .flat-tabs .content-inner .project-box-style6 {
+            width: calc((100% - 30px) / 2);
+        }
+        .resume-wrap {
+            flex-wrap: wrap;
+            .box {
+                width: 100%;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .tf-about .info {
+            flex-wrap: wrap;
+            li {
+                margin-top: 24px;
+                width: 50%;
+            }
+        }
+        .what_i_do_wrap {
+            flex-wrap: wrap;
+            .box {
+                width: 100%;
+            }
+        }
+    }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner {
+        .page-content {
+            flex-direction: column-reverse;
+            .image,
+            .content-box {
+                width: 100%;
+            }
+            .image {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .content-box .content {
+                padding: 0;
+            }
+        }
+        .flat-tabs {
+            margin-top: 30px;
+            .menu-tab {
+                margin-bottom: 30px;
+            }
+            .content-tab .content-inner .box {
+                width: calc((100% - 32px) / 2);
+            }
+        }
+        .resume-box .box .inner > div {
+            width: calc((100% - 40px) / 3);
+            padding: 15px 0 15px 15px;
+        }
+        .counter_wrapper {
+            flex-wrap: wrap;
+            .box {
+                padding: 0 !important;
+                width: calc((100% - 20px) / 2);
+            }
+        }
+    } 
+    .pr-10 {
+        padding-right: 0;
+    }
     .home20 .feature_wrapper {
         justify-content: space-between;
         .box {
@@ -287,6 +334,8 @@
                 }
             }
         }
+    }
+    .home14.style1 .header {
         #site-header-inner .tf-button {
             display: none;
         }
@@ -356,6 +405,132 @@
 }
 
 @include res991 { 
+    .home-demo .tf-heading .icon-4 {
+        right: 30px;
+    }
+    .home-demo .tf-heading .icon-2 {
+        right: 40px;
+    }
+    .home-demo .tf-heading .icon-1 {
+        left: 50px;
+    }
+    .home-demo .tf-heading .img-bg {
+        width: 33.333%;
+    }
+    .home-demo .tf-heading .tf-title {
+        padding: 80px 0;
+    }
+    .home-demo .tf-heading .img-bg.img3 {
+        left: 15px;
+    }
+    .home-demo .tf-heading .img-bg.img4 {
+        right: 15px;
+    }
+    .home-demo .tf-heading .img-bg.img1 {
+        left: 15px;
+        top: 15px;
+    }
+    .home-demo .tf-heading .img-bg.img2 {
+        right: 15px;
+        top: 15px;
+    }
+    .pd-28,
+    .home-demo .tf-about .about-wrapper .tf-title {
+        padding: 0;
+    }
+    .home-demo .tf-about .about-wrapper {
+        padding: 20px;
+        display: block;
+        .image,
+        .tf-title {
+            width: 100%;
+        }
+        .image {
+            padding: 0 30px 30px 0;
+        }
+    }
+    .home-demo .warpper-icon-box.col5 .icon-box,
+    .home-demo .warpper-icon-box.col6 .icon-box {
+        width: calc((100% - 40px) / 2);
+    }
+    .home-demo .flat-tabs .content-inner .img-box {
+        width: calc((100% - 40px) / 2);
+    }
+    .pd-25,.pd-20 {
+        padding: 0;
+    }
+    .home-demo .swiper.swiper-vertical {
+        height: 340px;
+    }
+    .page-title.style19 .content-box {
+        flex-direction: column-reverse;
+        .content {
+            width: 100%;
+            padding: 40px 0 0;
+            margin-bottom: 40px;
+        }
+        .image-box {
+            overflow: hidden;
+            width: 100%;
+            transform: rotate(0);
+            > .swiper_vertical {
+                margin-right: 0;
+            }
+        }
+    }
+    .home-demo .swiper_vertical .item img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .home14.style2 .header {
+        display: flex;
+    }
+    .home12.body {
+        overflow: visible;
+    }
+    .home14 .header .main-nav {
+        right: auto;
+    }  
+    .header .main-nav {
+        top: 0;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    .header__logo-mobile {
+        display: block;
+    }
+    #menu-modal {
+        display: none !important;
+    }
+    .home14.style2 {
+        #wrapper {
+            width: 100%;
+        }
+        .menu_dasboard {
+            display: none;
+        }
+    }
+    .home18 .dashboard-wapper {
+        #side-bar-dashboard .info {
+            margin-bottom: 40px;
+        }
+        .article-dashboard {
+            width: 100%;
+        }
+        display: block;
+        .menu_dasboard {
+            width: 100%;
+            .fixel_menu {
+                padding: 30px 15px;
+                overflow: visible;
+                position: relative;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
     .home2 {
         .counter_wrapper.style2 {
             .overlay {
@@ -453,7 +628,7 @@
     .home7 .header .container {
         padding: 0 15px;
     } 
-    .home6 #wrapper {
+    .home6 .wrapper {
         overflow: visible;
     }
     .flat-tabs-style2 .menu-tab {
@@ -614,7 +789,9 @@
         box-shadow: none;
     }
     .home17 .dashboard-wapper {
-        display: block;
+        flex-direction: column-reverse;
+        padding-top: 80px;
+        margin-top: 0;
     }
     .home17 #side-bar-dashboard {
         margin-top: 30px;
@@ -625,7 +802,7 @@
     }
     .home17 .dashboard-style2 {
         .article-dashboard {
-            padding: 80px 0 0;
+            padding: 30px 0 0;
             height: 100%;
         }
         #side-bar-dashboard,
@@ -797,10 +974,7 @@
             }
             padding: 20px 0 0;
         }
-    }
-    #side-bar-dashboard {
-        margin-bottom: 40px !important;
-    }
+    } 
     .page-title.style4 .content-box {
         display: block;
         padding: 0;
@@ -998,6 +1172,9 @@
 }
 
 @include res767 {
+    .user-dashboard {
+        margin-top: 30px;
+    }
     .page-title.style12 .content-box .content .animationtext.clip .cd-words-wrapper::after {
         top: 10px;
     }
@@ -1284,7 +1461,7 @@
     .home10 #footer .footer-content .copyright {
         margin-top: 20px;
     }
-    .home19 #wrapper {
+    .home19 .wrapper {
         padding-bottom: 0;
     }
     .home14 .section-about .wrapper_btn,
@@ -2140,9 +2317,14 @@
     .menu-destop {
         display: none;
     }
+    .home12 {
+        .article-dashboard .menu-dashboard.menu-mobile {
+            background: #3BBB67;
+        }
+    }
     .article-dashboard .menu-dashboard {
         position: relative;
-  
+        
         &.menu-mobile {
             background: #FFD84F;
             border-bottom: 1px solid #171717;
@@ -2285,6 +2467,21 @@
 
 
 @include res600 {
+    .home-demo .flat-tabs .content-inner .img-box {
+        width: 100%;
+    }
+    .home14.style2 .tf-about .info li {
+        width: 100%;
+    }
+    .popup-section {
+        max-width: 300px;
+        .content {
+            .inner,
+            .heading {
+                padding: 0 20px;
+            }
+        }
+    }
     .tf-title-style4 h3.title,
     .tf-title-style4 h3.title.white {
         font-size: 32px;
@@ -2483,6 +2680,10 @@
 }
 
 @include res500 {
+    .home-demo .warpper-icon-box.col5 .icon-box,
+    .home-demo .warpper-icon-box.col6 .icon-box {
+        width: 100%;
+    }
     .page-title.style8 .content-box .content .counter_wrapper {
         display: block;
     }
@@ -2563,5 +2764,13 @@
             padding: 15px 15px 0 !important;
             width: 100%;
         }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .height-500 {
+        height: 500px;
+        overflow: hidden;
     }
 }

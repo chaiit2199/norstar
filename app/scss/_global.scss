@@ -38,6 +38,10 @@ body {
     display: none;
 }
 
+.smooth {
+    scroll-behavior: smooth;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
@@ -223,11 +227,9 @@ p {
     background-color: $bg_12; 
 }
 
-#wrapper {
-    width: $w100;
-    height: $w100;
-    overflow: hidden;
-    position: relative;
+#wrapper { 
+    overflow: hidden !important;
+    position: relative; 
 }
 
 .text-gradient {
@@ -678,8 +680,9 @@ input[type="color"]::placeholder {
 }
 
   
-  .switcher__btn {
-    background-color: #000;
+  .switcher__btn { 
+    background-color: #2B2B2F;
+    padding-right: 12px;
     margin-right: 12px;
     select {
         font-weight: 400;
@@ -1015,6 +1018,20 @@ img.dark {
 
 
 .is_dark { 
+    .button-style.style3 .btn-main {
+        border-color:transparent;
+    }
+    .service-box-style4 .icon svg path {
+        stroke: $white;
+    }
+    .article-dashboard .body-dashboard .section-inner#Contact form .button-style {
+        .btn-main {
+            border-color: transparent;
+        }
+        .btn-absolute {
+            background-color: $white;
+        }
+    }
     .service-box-style5 .content .title {
         color: $white;
     } 
@@ -1158,9 +1175,19 @@ img.dark {
             color: $white;
         }
         .button.style2 {
+            svg {
+                path {
+                    @include transition3;
+                }
+            }
             &:hover {
-                background-color: $color-hover !important;
-                color: $white !important;
+                background-color: $white !important;
+                color: $bg_2 !important;
+                svg {
+                    path {
+                        stroke: $bg_2;
+                    }
+                }
             }
         }
     }
@@ -1210,7 +1237,7 @@ img.dark {
             color: $txt-color !important;
         }
         .article-dashboard .body-dashboard .section-inner#Service .box:hover h5 {
-            color: $color-hover !important;
+            color: #EE37B4 !important;
         }
         .article-dashboard .body-dashboard .section-inner#Service .box:hover p,
         .article-dashboard .body-dashboard .section-inner#Service .box p {
@@ -1534,6 +1561,9 @@ img.dark {
             background-color: $white;
         }
         .resume-wrap .box ul li {
+            h5 {
+                @include transition3;
+            }
             &.active,
             &:hover {
                 h5 {
@@ -1548,15 +1578,7 @@ img.dark {
         .header #main-nav .menu li {
             a {
                 color: $white;
-            }
-            &.menu-item-has-children > a {
-                &::after {
-                    color: $white;
-                }
-                &::before {
-                    background-color: $white;
-                }
-            }
+            } 
         } 
         .page-title.style11 {
             background: linear-gradient(8.36deg, rgba(45, 37, 4, 0) 5.56%, #352B00 93.18%);
@@ -1588,6 +1610,20 @@ img.dark {
         }
     }
     &.home18 {  
+        .dashboard-style2 .article-dashboard .body-dashboard .section-inner#services .wrapper_service .box-style2 {
+            border-color: #3A3B3E;
+            .icon {
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+            &:hover {
+                box-shadow: 0px 10px 25px 0px #273F441A;
+                background-color: #000000;
+            }
+        }
         #footer ul li a {
             color: $txt-color;
         }
@@ -2394,6 +2430,13 @@ img.dark {
         svg {
             path {
                 stroke: $white;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    stroke: $bg_2;
+                }
             }
         }
     }

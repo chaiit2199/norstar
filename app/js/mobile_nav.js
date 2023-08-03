@@ -11,7 +11,7 @@
         var wrapMenu = $("#site-header-inner");
         var navExtw = $(".nav-extend.active");
         var navExt = $(".nav-extend.active").children();
-    
+        var logo = $(".header__logo-mobile")
         responsivemenu(mobile);
     
         mobile.addListener(responsivemenu);
@@ -19,6 +19,7 @@
         function responsivemenu(mobile) {
           if (mobile.matches) {
             $("#main-nav")
+              .append(logo)
               .attr("id", "main-nav-mobi")
               .appendTo("#header_main")
               .hide()
@@ -42,14 +43,14 @@
               .removeAttr("style")
               .prev()
               .remove();
-    
             $(".mobile-button").removeClass("active");
-            $(".sub-menu").css({ display: "flex" });
+            $(".sub-menu").css({ display: "flex" }); 
           }
         }
         $(document).on("click", ".mobile-button", function () {
           $(this).toggleClass("active");
           $("#main-nav-mobi").slideToggle();
+          $('body').toggleClass('main-nav-mobile');
         });
         $(document).on("click", "#main-nav-mobi .arrow", function () {
           $(this).toggleClass("active").next().slideToggle();

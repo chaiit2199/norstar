@@ -11,7 +11,6 @@ var myFunction = function() {
 	this.classList.add('active');
 }	
 
-
 for(var index=0;index<tabs.length;index++){
 	tabs[index].mynum=index;
 	tabs[index].addEventListener('mouseover', myFunction, false);

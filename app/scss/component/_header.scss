@@ -6,6 +6,12 @@
     background: transparent;
 }
 
+.home25 .header #site-header-inner .header__logo img {
+    height: auto;
+    max-width: 100%;
+    min-width: auto;
+}
+
 .header {
     .header-right {
         position: absolute;
@@ -60,6 +66,11 @@
         .header__logo {
             z-index: 9;
             padding-left: 15px;
+            img {
+                height: 42px;
+                max-width: 157px;
+                min-width: 157px;
+            }
         }
     }
     .main-nav {
@@ -129,6 +140,15 @@
   } 
 #main-nav .menu {
     @include flex(center, center);
+    &.right {
+        justify-content: flex-end;
+        padding-right: 15px;
+        li {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
     z-index: 99;
     li {
         position: static;
@@ -283,6 +303,14 @@
         display: flex;
     }
 }
+
+.home5,
+.home7,
+.home10 {
+    #header_main.is-fixed.is-fixed.is-small {
+        height: 100px;
+    }
+}
 #header_main.is-fixed {
     &.header-style2 #main-nav .menu li a .menu-text {
         text-shadow: 0 16px 0 $white;
@@ -294,7 +322,7 @@
     top       : -100px;
     left      : 0;
     width     : 100%; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), inset 0px 1px 0px #ECECEC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), inset 0px 0 0px #ECECEC;
     &.is-fixed.is-small {
         top: -1px;
         opacity: 1;
@@ -341,7 +369,17 @@
 }
 
 .home2 {
-    #main-nav .menu li a::before {
-        background-color: #BBADFF;
+    #main-nav {
+        .menu li a {
+            &::before {
+                background-color: #BBADFF;
+            }
+        }
+        .sub-menu li a {
+            &:hover,
+            &.current-item {
+                text-decoration-color: #BBADFF;
+            }
+        }
     }
 }

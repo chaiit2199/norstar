@@ -2,7 +2,21 @@
 
 /* Footer
 -------------------------------------------------------------- */
-#footer { 
+.home27,
+.home2 {
+    #footer { 
+        .button-style {
+            &:hover {
+                .btn-main {
+                    background-color: $white !important;
+                    color: $bg-2 !important;
+                }
+            }
+        }
+    }
+}
+
+#footer {  
     position: relative; 
     .container {
         z-index: 1;

@@ -47,7 +47,7 @@
         menu_dashboard();
         mobileDashboard();
         let width = screen.width;
-        if(width > 1200) {
+        if(width > 991) {
             body_dashboard();
         } else {
         }

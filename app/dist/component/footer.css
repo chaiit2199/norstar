@@ -1,5 +1,11 @@
 /* Footer
 -------------------------------------------------------------- */
+.home27 #footer .button-style:hover .btn-main,
+.home2 #footer .button-style:hover .btn-main {
+  background-color: #fff !important;
+  color: #171717 !important;
+}
+
 #footer {
   position: relative;
   padding: 80px 0;

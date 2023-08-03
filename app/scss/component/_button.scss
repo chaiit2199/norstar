@@ -33,7 +33,7 @@ $hover-margin: -($spacing-3 - 2);
         &.hover-circle { 
             &:hover {
                 span {
-                    color: $bg_6;
+                    color: $bg_2;
                 }
             }
         }
@@ -164,6 +164,9 @@ $hover-margin: -($spacing-3 - 2);
         &:hover {
             transform: translateY(-8px);
             background-color: $white;
+            // .text {
+            //     color: $white;
+            // }
             span {
                 color: $bg_2;
             }

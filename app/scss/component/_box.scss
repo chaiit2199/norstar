@@ -289,14 +289,7 @@
         .title {
             color: $white;
         }
-    }
-    &:hover {
-        .icon { 
-            a {
-                transform: translate3d(10px,-10px,-10px);
-            }
-        }
-    }
+    } 
 }
 
 .service-box-style4 {
@@ -308,10 +301,6 @@
     @include transition3;
     padding: 24px 32px 24px 28px;
     @include flex(center,space-between);
-    margin-bottom: 28px;
-    &:last-child {
-        margin-bottom: 0;
-    }
     .content {
         padding-right: 25px;
         h5 {
@@ -334,8 +323,14 @@
                 path {
                     @include transition3;
                 }
-            }
-            &:hover {
+            } 
+        }
+    }
+
+    &:hover {
+        border-color: $bg_6;
+        .icon {
+            a {
                 svg {
                     path {
                         stroke: $bg_6;
@@ -343,16 +338,9 @@
                 }
             }
         }
-    }
-
-    &:hover {
-        border-color: $bg_6;
     } 
     &:hover {
-        transform: translateY(-10px);
-        .icon {
-            transform: translate3d(10px,-10px,-10px);
-        }
+        transform: translateY(-10px); 
     }
 }
 
@@ -366,17 +354,10 @@
     &:hover {
         box-shadow: 0px 10px 25px rgba(39, 63, 68, 0.1);
         border-color: transparent;
-    }
-    &:hover {
-        .icon {
-            transform: rotateY(-360deg);
-        }
-    }
+    } 
     .icon {
         max-width: 53px;
         margin-bottom: 20px;
-        transform: rotateY(0);
-        transition: all 0.8s ease;
     }
     .content {
         .title {
@@ -544,6 +525,8 @@
             background-color: $bg_6;
             &:hover {
                 bottom: 40px;
+                background-color: $white;
+                color: $bg_6;
             }
         }
     }
@@ -883,12 +866,12 @@
     &.image {
         overflow: hidden;
         img {
-            transform: scale(1.05);
+            transform: scale(1.02);
             width: 100%; 
-            -webkit-transform: rotate(5deg) scale(1.2);
-            transform: rotate(5deg) scale(1.2);
-            -webkit-transition: .4s ease-in-out;
-            transition: .4s ease-in-out;
+            -webkit-transform: rotate(3deg) scale(1.1);
+            transform: rotate(3deg) scale(1.1);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
         }
         &:hover { 
             img { 
@@ -928,17 +911,17 @@
             width: 100%;
             opacity: 0;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            -webkit-transition: 0.3s ease-in-out;
-            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
         }
         margin-bottom: 30px;
         img {
-            transform: scale(1.05);
+            transform: scale(1.02);
             width: 100%; 
-            -webkit-transform: rotate(5deg) scale(1.2);
-            transform: rotate(5deg) scale(1.2);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
+            -webkit-transform: rotate(3deg) scale(1.1);
+            transform: rotate(3deg) scale(1.1);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
         }
     }
     .content {
@@ -1370,8 +1353,6 @@
         height: 80px;
         margin-right: 40px;
         min-width: 80px;
-        transform: rotateY(0);
-        transition: all 0.8s ease;
     }
     .content {
         .title {
@@ -1381,12 +1362,7 @@
         .desc {
             color: $color_1;
         }
-    }
-    &:hover {
-        .icon {
-            transform: rotateY(-360deg);
-        }
-    }
+    } 
 }
 
 .pricing-wrapper {

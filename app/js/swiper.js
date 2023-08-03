@@ -1,9 +1,13 @@
 
-
 var swiper =  new Swiper(".sl-testimonial", {
     slidesPerView: 1,
-    loop: false,  
+    loop: true,  
     spaceBetween: 30,
+    autoplay: {
+        delay: 100, 
+    },  
+    speed: 3000,  
+    direction: 'horizontal',
     navigation: {
         nextEl: ".btn-next-testimonials",
         prevEl: ".btn-prev-testimonials",
@@ -11,19 +15,23 @@ var swiper =  new Swiper(".sl-testimonial", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-}); 
+    }
+
+});  
+
 
 
 var swiper =  new Swiper(".banner_26", {
     direction: "vertical",
-    loop: true,
-    autoplay: {
-        delay: 1, 
-    },  
+    // slidesPerView: "auto",
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+    mousewheelControl: true,
+    loop: false, 
     grabCursor: true,
     slidesPerView: 1,
-    speed: 2000, 
+    speed: 1500, 
     spaceBetween: 0, 
     navigation: {
         nextEl: ".btn-next-testimonials",
@@ -35,37 +43,7 @@ var swiper =  new Swiper(".banner_26", {
     },
 }); 
 
-var swiper =  new Swiper(".sl-testimonial-3", {
-    slidesPerView: 1,
-    loop: false,  
-    spaceBetween: 0,
-    navigation: {
-        nextEl: ".next-testimonials",
-        prevEl: ".prev-testimonials",
-    } ,
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        400: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        600: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-        },
-        750: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-        },
-        991: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-        }
-    }
-}); 
+
 
 var swiper =  new Swiper(".sl-testimonial-5", {
     slidesPerView: 1,
@@ -106,10 +84,10 @@ var swiper =  new Swiper(".sl-brand", {
     centeredSlides: true,
     allowTouchMove: false,
     speed: 3000,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 1,
+    //   disableOnInteraction: true,
+    // },
     
     spaceBetween: 12,
     breakpoints: {
@@ -559,16 +537,15 @@ $(".sl-brand-10").hover(function() {
     (this).swiper.autoplay.stop();
 }, function() {
     (this).swiper.autoplay.start();
-});
-
+}); 
 var swiper =  new Swiper(".sl-brand-12", {
     loop: true, 
     spaceBetween: 0,
     speed: 3000,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: true,
-    },
+    // autoplay: {
+    //     delay: 0,
+    //     disableOnInteraction: true,
+    // },
     slidesPerView: 1,
     breakpoints: {
         0: {
@@ -598,20 +575,21 @@ var swiper =  new Swiper(".sl-brand-12", {
     }
 }); 
 
-$(".sl-brand-12").hover(function() {
-    (this).swiper.autoplay.stop();
-}, function() {
-    (this).swiper.autoplay.start();
-});
+// $(".sl-brand-12").hover(function() { 
+//     (this).swiper.autoplay.stop(); 
+// }, function() {
+//     (this).swiper.autoplay.start();
+// });
+ 
 
 var swiper =  new Swiper(".sl-brand-13", {
     loop: true, 
     spaceBetween: 0,
     speed: 3000,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: true,
-    },
+    // autoplay: {
+    //     delay: 1,
+    //     disableOnInteraction: true,
+    // },
     slidesPerView: 1,
     breakpoints: {
         0: {
@@ -641,11 +619,11 @@ var swiper =  new Swiper(".sl-brand-13", {
     }
 }); 
 
-$(".sl-brand-13").hover(function() {
-    (this).swiper.autoplay.stop();
-}, function() {
-    (this).swiper.autoplay.start();
-});
+// $(".sl-brand-13").hover(function() {
+//     (this).swiper.autoplay.stop(); 
+// }, function() {
+//     (this).swiper.autoplay.start(); 
+// });
 
 var swiper =  new Swiper(".sl-project", {
     slidesPerView: 1,
@@ -685,6 +663,12 @@ var swiper =  new Swiper(".sl-project", {
 
 var swiper =  new Swiper(".sl-project-2", {
     slidesPerView: 1,
+    direction: 'horizontal',
+    speed: 1000,  
+    mousewheel: {
+        releaseOnEdges: true,
+      },
+    mousewheelControl: true,
     loop: true, 
     spaceBetween: 0,
     autoplay: true,
@@ -742,7 +726,11 @@ var swiper =  new Swiper(".sl-testimonial-2", {
 
 var swiper =  new Swiper(".sl-testimonial-22", {
     slidesPerView: 1,
-    loop: false,  
+    loop: true,  
+    autoplay: {
+        delay: 1, 
+    }, 
+    speed: 3000,
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -766,7 +754,11 @@ var swiper =  new Swiper(".sl-testimonial-22", {
 
 var swiper =  new Swiper(".sl-testimonial-3", {
     slidesPerView: 1,
-    loop: false,  
+    loop: true,  
+    autoplay: {
+        delay: 1, 
+    }, 
+    speed: 3000,
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -795,6 +787,11 @@ var swiper =  new Swiper(".sl-testimonial-3", {
         clickable: true,
     },
 }); 
+$(".sl-testimonial-3").hover(function() {
+    (this).swiper.autoplay.stop(); 
+}, function() {
+    (this).swiper.autoplay.start(); 
+});
 
 var swiper =  new Swiper(".sl-testimonial-4", {
     slidesPerView: 1,
@@ -823,6 +820,12 @@ var swiper =  new Swiper(".sl-testimonial-4", {
         clickable: true,
     },
 }); 
+$(".sl-testimonial-4").hover(function() {
+    (this).swiper.autoplay.stop();
+}, 
+function() {
+    (this).swiper.autoplay.start();
+});
 
 var swiper = new Swiper(".mySwiper1", {
     direction: "vertical",
@@ -833,7 +836,7 @@ var swiper = new Swiper(".mySwiper1", {
     autoplay: {
         delay: 1, 
     }, 
-    speed: 3000,
+    speed: 4000,
     });
     $(".mySwiper1").hover(function() {
         (this).swiper.autoplay.stop();
@@ -852,13 +855,16 @@ var swiper = new Swiper(".mySwiper2", {
         delay: 1,
         reverseDirection: true,
     }, 
-    speed: 3000,
+    speed: 4000,
     });
     $(".mySwiper2").hover(function() {
         (this).swiper.autoplay.stop();
     }, function() {
         (this).swiper.autoplay.start();
 });
+
+
+
 var swiper = new Swiper(".mySwiper3", {
     direction: "vertical",
     spaceBetween: 24,
@@ -868,9 +874,63 @@ var swiper = new Swiper(".mySwiper3", {
     autoplay: {
         delay: 1,
     }, 
-    speed: 3000,
+    speed: 4000,
     });
     $(".mySwiper3").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+});
+
+var swiper = new Swiper(".mySwiper8", {
+    direction: "vertical",
+    spaceBetween: 16,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+        delay: 0, 
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper8").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, 
+    function() {
+        (this).swiper.autoplay.start();
+});
+
+var swiper = new Swiper(".mySwiper9", {
+    direction: "vertical",
+    spaceBetween: 16,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+        delay: 0, 
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper9").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+});
+
+
+
+var swiper = new Swiper(".mySwiper10", {
+    direction: "vertical",
+    spaceBetween: 16,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+        delay: 0, 
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper10").hover(function() {
         (this).swiper.autoplay.stop();
     }, function() {
         (this).swiper.autoplay.start();
@@ -922,6 +982,12 @@ var swiper = new Swiper(".mySwiper7", {
     spaceBetween: 30,
     grabCursor: true,
     loop: true,
+    direction: 'horizontal',
+    speed: 1500,  
+    mousewheel: {
+        releaseOnEdges: true,
+      },
+    mousewheelControl: true,
     breakpoints: {
         0: {
             slidesPerView: 1
@@ -944,12 +1010,7 @@ var swiper = new Swiper(".mySwiper7", {
     shortSwipes: false,
     longSwipes: false,
     allowTouchMove: true,
-    reverseDirection: true, 
-    freeMode: true, 
-    autoplay: {
-        delay: 1,
-    }, 
-    speed: 3000,
+    reverseDirection: true,  
     disableOnInteraction: true
 });
 $(".mySwiper7").hover(function() {
@@ -957,8 +1018,6 @@ $(".mySwiper7").hover(function() {
 }, function() {
     (this).swiper.autoplay.start();
 });
-
-
 
 
 var swiper = new Swiper(".mySwiper4", {
@@ -1029,11 +1088,10 @@ var swiper = new Swiper(".mySwiper5", {
     shortSwipes: false,
     longSwipes: false,
     allowTouchMove: true,
-    // autoplay: {
-    // delay: 0.3, 
-    // reverseDirection: true,
-    // }, 
-    // autoplay:false,
+    autoplay: {
+    delay: 0.3, 
+    reverseDirection: true,
+    }, 
     freeMode: true, 
     speed: 2200,
     disableOnInteraction: true
@@ -1075,3 +1133,86 @@ var swiper = new Swiper(".mySwiper5", {
           },
         },
       });
+
+      var swiper = new Swiper(".mySwiper11", {
+        spaceBetween: 40,
+        grabCursor: true,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            400: {
+                slidesPerView: 1
+            },
+            767: {
+                slidesPerView: 2
+            },
+            991: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            },
+        },
+        observer: true,
+        observeParents: true,
+        shortSwipes: false,
+        longSwipes: false,
+        allowTouchMove: true,
+        reverseDirection: true,
+        autoplay: {
+        delay: 0.3, 
+        }, 
+        // autoplay:false,
+        freeMode: true, 
+        speed: 3000,
+        disableOnInteraction: true
+        });
+        $(".mySwiper11").hover(function() {
+            (this).swiper.autoplay.stop();
+        }, 
+        function() {
+            (this).swiper.autoplay.start();
+        });
+    
+    var swiper = new Swiper(".mySwiper12", {
+        spaceBetween: 40,
+        grabCursor: true,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            400: {
+                slidesPerView: 1
+            },
+            767: {
+                slidesPerView: 2
+            },
+            991: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 2
+            },
+        },
+        observer: true,
+        observeParents: true,
+        shortSwipes: false,
+        longSwipes: false,
+        allowTouchMove: true,
+        autoplay: {
+        delay: 0.3, 
+        reverseDirection: true,
+        },  
+        freeMode: true, 
+        speed: 2200,
+        disableOnInteraction: true
+        });
+    
+        $(".mySwiper12").hover(function() {
+            (this).swiper.autoplay.stop();
+        }, function() {
+            (this).swiper.autoplay.start();
+        });
