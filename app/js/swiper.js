@@ -893,70 +893,32 @@ var swiper = new Swiper(".mySwiper3", {
 var swiper = new Swiper(".mySwiper8", {
     direction: "vertical",
     spaceBetween: 16,
-    grabCursor: true,
     loop: true,
     slidesPerView: 2,
-    reloop: true, 
-    autoplayStopOnLast: false,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false, // tắt autoplay khi người dùng tương tác
-    },
-    
+    autoplay: false,
     speed: 1500,
-    });
-    $(".mySwiper8").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, 
-    function() {
-        (this).swiper.autoplay.start();
-});
+    allowSlide: false
+    }); 
 
 var swiper = new Swiper(".mySwiper9", {
     direction: "vertical",
     spaceBetween: 16,
-    grabCursor: true,
     loop: true,
     slidesPerView: 2,
-    reloop: true, 
-    autoplayStopOnLast: false,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false, // tắt autoplay khi người dùng tương tác
-        reverseDirection: true, // đảo hướng autoplay khi swiper lặp lại
-    },
-    
+    autoplay: false,
     speed: 1500,
-    });
-    $(".mySwiper9").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, function() {
-        (this).swiper.autoplay.start();
-});
+    }); 
 
 
 
 var swiper = new Swiper(".mySwiper10", {
     direction: "vertical",
     spaceBetween: 16,
-    grabCursor: true,
     loop: true,
     slidesPerView: 2,
-    reloop: true, 
-    autoplayStopOnLast: false,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false, // tắt autoplay khi người dùng tương tác
-    },
-    
+    autoplay: false,
     speed: 1500,
-    });
-    $(".mySwiper10").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, function() {
-        (this).swiper.autoplay.start();
-});
-
+    }); 
 
 var swiper = new Swiper(".mySwiper6", {
     spaceBetween: 75,
