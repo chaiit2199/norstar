@@ -405,6 +405,9 @@
 }
 
 @include res991 { 
+    .pl-35 {
+        padding-left: 0 !important;
+    }
     .home-demo .tf-heading .icon-4 {
         right: 30px;
     }
@@ -1169,9 +1172,59 @@
             }
         }
     }
+    .mobile-nav-style {
+        .header__logo-mobile {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #menu-primary-menu {
+            padding-top: 80px;
+        }
+    }
 }
 
 @include res767 {
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .testimonials-box {
+        .image {
+            margin-bottom: 24px;
+            width: 100%;
+            height: auto;
+        }
+        display: block;
+    }
+    .home16 .project-wrapper .project-box .image .position-button {
+        bottom: 16px;
+    }
+    .box-details .wraper-tag .tag {
+        flex-wrap: wrap;
+        li {
+            margin-bottom: 16px;
+        }
+    }
+    .home17 .dashboard-style2 #side-bar-dashboard .info-style2 .info_contact li span, .home17 .dashboard-style2 #side-bar-dashboard .info-style2 .info_contact li a {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner#services .wrapper_service .box-style2:last-child {
+        padding-bottom: 0;
+    }
+    .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box:nth-child(2) {
+        margin-left: 0;
+    }
+    .home12.is_light .dashboard-style2 #side-bar-dashboard .info-style2 {
+        margin-bottom: 40px;
+    }
+    .page-title.style4 {
+        padding: 100px 0 80px; 
+    }
+    .home10 .flat-tabs-style2 .menu-tab li {
+        margin-right: 30px;
+        margin-left: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     .user-dashboard {
         margin-top: 30px;
     }
@@ -2474,6 +2527,7 @@
         width: 100%;
     }
     .popup-section {
+        right: -300px;
         max-width: 300px;
         .content {
             .inner,
@@ -2765,12 +2819,7 @@
             width: 100%;
         }
     }
-}
-
-
-@media (min-width: 1200px) {
-    .height-500 {
-        height: 500px;
-        overflow: hidden;
+    .mobile-full {
+        width: 100%;
     }
-}
+} 

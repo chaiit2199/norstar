@@ -40,11 +40,10 @@
     top: 0;
     overflow-y: auto;
     background: #0E0E0E;
-    max-height: 100vh;
-    height: 100vh; 
+    height: calc(100vh + 10px);
     ul {
         ul {
-            max-height: 50vh;
+            max-height: 240px;
             overflow-y: auto;
         }
         display: block;
@@ -124,12 +123,37 @@
     }
 }
 
+.home5.is_dark,
+.home5 #header_main.is-fixed.is-fixed.is-small {
+    .mobile-button {
+        &.style2 {
+            span,
+            &::after,
+            &::before {
+                background: $bg_2 !important;
+            }
+        }
+    }
+}
+
 .home21 {
     .mobile-button {
         left: 15px;
         right: auto;
     }
 } 
+.home5.is_dark,
+.home5 .header.is-fixed {
+    .icon-menu  {
+        &.style2 {
+            span,
+            &::after,
+            &::before {
+                background: $bg_2 !important;
+            }
+        }
+    }
+}
 .home5,
 .home7 {
     .header .header-right {

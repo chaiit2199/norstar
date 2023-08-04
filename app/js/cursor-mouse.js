@@ -4,9 +4,6 @@
    
     let device_width = window.innerWidth;
  
-   
-  
-  
     /////////////////////////////////////////////////////
     // 01. Cursor Animations
   

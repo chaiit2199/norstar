@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/font/font-awesome.css">
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">  
 </head>
 <body class="body header-fixed main counter-scroll home2">
     <div class="cursor1"></div>
@@ -139,6 +139,8 @@
             </div>
         </header>
         <!-- end Header -->
+
+        <!-- page-title -->
         <div class="page-title-wrapper relative">
             <div class="overlay parallax">
             </div>
@@ -200,13 +202,14 @@
     
     
         </div>
-    
+        <!-- page-title -->
+
         <section class="tf-section we-are-a themes-bg themes-color">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="image max-width-690 mobile-mb30 wow img-animation height-500">
-                            <img src="./assets/images/common/we-are-a.jpg" alt="About Thumbnail">
+                            <img src="./assets/images/common/we-are-a.jpg" alt="About Thumbnail"  class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="1000" data-ps-horizontal-position="120">
                         </div>
                     </div>
                     <div class="col-md-6 flex align-items-center">
@@ -467,6 +470,7 @@
             </div>
         </section> 
     
+        <!-- footer -->
         <footer id="footer" class="themes-bg-style"> 
             <div class="container wow fadeIn" data-wow-delay=".3s">
                 <div class="row">
@@ -518,98 +522,102 @@
                     </div>
                 </div>
             </div>
-        </footer>  
+        </footer> 
+        <!-- footer --> 
     </div> 
 
-    <div id="project-modal" class="modal">
-        <div class="bg-modal bg-modal-project"></div>
-        <div class="modal-content project--modal">
-            <span class="close-modal close-modal-project"><img src="./assets/images/icon/close_modal.svg" alt=""></span>
-            <div class="box-details project-details">
-                <div class="content">
-                    <h3 class="heading mb-28">
-                        3D Motion Graphic
-                    </h3> 
-                    <div class="image mb-32">
-                        <img src="./assets/images/post/post_15.jpg" alt="">
-                    </div> 
-                    <p class="txt mb-20">
-                        We are opening up our platform and inviting all builders to create the first plugins and widgets for FigJam. Check out our documentation to start building new plugins or republishing your existing Figma plugins for FigJam. 
-                    </p>  
-                    <p class="txt mb-32">
-                        These are just a handful of examples—we have 35 builders who have FigJam plugins already in the works, and we are so excited for you to join them.
-                    </p>
-                    <div class="wraper-tag">
-                        <ul class="tag">
-                            <li><span>Web Design</span></li>
-                            <li><span>Graphic Design</span></li>
-                            <li><span>UX Research</span></li>
-                        </ul>
-                        <ul class="link">
-                            <li><span>Share This Post:</span></li>
-                            <li>
-                                <a href="#"><img src="./assets/images/icon/fb_3.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./assets/images/icon/social-3.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./assets/images/icon/v.svg" alt=""></a>
-                            </li>
+    <!-- modal -->
+        <div id="project-modal" class="modal">
+            <div class="bg-modal bg-modal-project"></div>
+            <div class="modal-content project--modal">
+                <span class="close-modal close-modal-project"><img src="./assets/images/icon/close_modal.svg" alt=""></span>
+                <div class="box-details project-details">
+                    <div class="content">
+                        <h3 class="heading mb-28">
+                            3D Motion Graphic
+                        </h3> 
+                        <div class="image mb-32">
+                            <img src="./assets/images/post/post_15.jpg" alt="">
+                        </div> 
+                        <p class="txt mb-20">
+                            We are opening up our platform and inviting all builders to create the first plugins and widgets for FigJam. Check out our documentation to start building new plugins or republishing your existing Figma plugins for FigJam. 
+                        </p>  
+                        <p class="txt mb-32">
+                            These are just a handful of examples—we have 35 builders who have FigJam plugins already in the works, and we are so excited for you to join them.
+                        </p>
+                        <div class="wraper-tag">
+                            <ul class="tag">
+                                <li><span>Web Design</span></li>
+                                <li><span>Graphic Design</span></li>
+                                <li><span>UX Research</span></li>
+                            </ul>
+                            <ul class="link">
+                                <li><span>Share This Post:</span></li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/icon/fb_3.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/icon/social-3.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./assets/images/icon/v.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-project">
+                        <ul class="inner">
+                            <li>Project Type: <span>Graphic Design</span></li>
+                            <li>Client: <span>Tony Nguyen</span></li>
+                            <li>Duration:  <span>2 Weeks</span></li>
+                            <li>Task: <span>UI/UX, Frontend</span></li>
+                            <li>Budget:  <span>$3400</span></li>
                         </ul>
                     </div>
                 </div>
-                <div class="info-project">
-                    <ul class="inner">
-                        <li>Project Type: <span>Graphic Design</span></li>
-                        <li>Client: <span>Tony Nguyen</span></li>
-                        <li>Duration:  <span>2 Weeks</span></li>
-                        <li>Task: <span>UI/UX, Frontend</span></li>
-                        <li>Budget:  <span>$3400</span></li>
-                    </ul>
+            </div> 
+        </div>
+        <div id="home-modal" class="popup-section">
+            <div class="bg-modal bg-modal-home"></div>
+            <div class="content"> 
+                <img class="close-popup" src="./assets/images/common/close-popup.png" alt="">
+                <h4 class="heading">Demo Home</h4>
+                <div class="inner">
+                    <a href="Home-Corperate.html">
+                        <img src="./assets/images/common/img_demo_1.png" alt="">
+                    </a>
+                    <a href="Home-Agency-Creative.html">
+                        <img src="./assets/images/common/img_demo_2.png" alt="">
+                    </a>
+                    <a href="Home-Agency-Marketing.html">
+                        <img src="./assets/images/common/img_demo_3.png" alt="">
+                    </a> 
+                    <a href="Home-Saas.html">
+                        <img src="./assets/images/common/img_demo_4.png" alt="">
+                    </a>
+                    <a href="Home-Brand-Agency.html">
+                        <img src="./assets/images/common/img_demo_5.png" alt="">
+                    </a>
+                    <a href="Home-Corperate.html">
+                        <img src="./assets/images/common/img_demo_1.png" alt="">
+                    </a>
+                    <a href="Home-Agency-Creative.html">
+                        <img src="./assets/images/common/img_demo_2.png" alt="">
+                    </a>
+                    <a href="Home-Agency-Marketing.html">
+                        <img src="./assets/images/common/img_demo_3.png" alt="">
+                    </a> 
+                    <a href="Home-Saas.html">
+                        <img src="./assets/images/common/img_demo_4.png" alt="">
+                    </a>
+                    <a href="Home-Brand-Agency.html">
+                        <img src="./assets/images/common/img_demo_5.png" alt="">
+                    </a>
                 </div>
-            </div>
-        </div> 
-    </div>
-    <div id="home-modal" class="popup-section">
-        <div class="bg-modal bg-modal-home"></div>
-        <div class="content"> 
-            <img class="close-popup" src="./assets/images/common/close-popup.png" alt="">
-            <h4 class="heading">Demo Home</h4>
-            <div class="inner">
-                <a href="Home-Corperate.html">
-                    <img src="./assets/images/common/img_demo_1.png" alt="">
-                </a>
-                <a href="Home-Agency-Creative.html">
-                    <img src="./assets/images/common/img_demo_2.png" alt="">
-                </a>
-                <a href="Home-Agency-Marketing.html">
-                    <img src="./assets/images/common/img_demo_3.png" alt="">
-                </a> 
-                <a href="Home-Saas.html">
-                    <img src="./assets/images/common/img_demo_4.png" alt="">
-                </a>
-                <a href="Home-Brand-Agency.html">
-                    <img src="./assets/images/common/img_demo_5.png" alt="">
-                </a>
-                <a href="Home-Corperate.html">
-                    <img src="./assets/images/common/img_demo_1.png" alt="">
-                </a>
-                <a href="Home-Agency-Creative.html">
-                    <img src="./assets/images/common/img_demo_2.png" alt="">
-                </a>
-                <a href="Home-Agency-Marketing.html">
-                    <img src="./assets/images/common/img_demo_3.png" alt="">
-                </a> 
-                <a href="Home-Saas.html">
-                    <img src="./assets/images/common/img_demo_4.png" alt="">
-                </a>
-                <a href="Home-Brand-Agency.html">
-                    <img src="./assets/images/common/img_demo_5.png" alt="">
-                </a>
-            </div>
-        </div> 
-    </div>
+            </div> 
+        </div>
+    <!-- modal -->
+    
     <a id="scroll-top"></a>
     <script src="app/js/jquery.min.js"></script>
     <script type="text/javascript" src="./app/js/jquery.cookie.min.js"></script>
@@ -619,15 +627,12 @@
     <script src="app/js/swiper-bundle.min.js"></script>
     <script src="app/js/bootstrap.min.js"></script>
     <script src="app/js/swiper.js"></script> 
-    <script src="app/js/jquery.easing.js"></script>
-    <script src="app/js/jquery.magnific-popup.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script> 
     <script src="app/js/countto.js"></script>
-    <script src="app/js/mobile_nav.js"></script>
-    <script src="app/js/parallax.js"></script>
     <script src="app/js/wow.min.js"></script>
     <script src="app/js/app.js"></script>
+    <script src="app/js/parallax.js"></script>
     <script src="app/js/jquery-validate.js"></script> 
-    <script src="app/js/project-details.js"></script>  
-    <script src="app/js/ScrollTrigger.min.js"></script> 
+    <script src="app/js/project-details.js"></script>   
 </body>
 </html>

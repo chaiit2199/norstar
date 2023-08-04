@@ -171,3 +171,11 @@
         width: auto !important;
     }
 }
+
+.sl-brand-12 .swiper-slide .image span:nth-child(1) img {
+    min-width: 40px;
+    max-width: 40px;
+}
+.sl-brand-12 .swiper-slide .image span:nth-child(2) img {
+    max-height: 90px;
+}
