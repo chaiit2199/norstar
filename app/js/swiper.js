@@ -16,7 +16,38 @@ var swiper =  new Swiper(".sl-testimonial", {
         el: ".swiper-pagination",
         clickable: true,
     }
+});  
 
+var swiper =  new Swiper(".inner-page", {
+    slidesPerView: 1,
+    loop: true,  
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        400: {
+            slidesPerView: 1,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        750: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+    },
+    autoplay: {
+        delay: 100, 
+    },  
+    speed: 3000,  
 });  
 
 
@@ -41,8 +72,6 @@ var swiper =  new Swiper(".banner_26", {
         clickable: true,
     },
 }); 
-
-
 
 var swiper =  new Swiper(".sl-testimonial-5", {
     slidesPerView: 1,
@@ -834,6 +863,47 @@ $(".sl-testimonial-4").hover(function() {
 function() {
     (this).swiper.autoplay.start();
 });
+
+var swiper =  new Swiper(".sl-testimonial-6", {
+    slidesPerView: 1,
+    // loop: true,  
+    // autoplay: {
+    //     delay: 1, 
+    // }, 
+    speed: 3000,
+    spaceBetween: 32,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        500: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        }, 
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 
+// $(".sl-testimonial-6").hover(function() {
+//     (this).swiper.autoplay.stop(); 
+// }, function() {
+//     (this).swiper.autoplay.start(); 
+// });
 
 var swiper = new Swiper(".mySwiper1", {
     direction: "vertical",
