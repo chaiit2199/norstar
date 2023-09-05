@@ -18,7 +18,7 @@ var swiper =  new Swiper(".sl-testimonial", {
     }
 });  
 
-var swiper =  new Swiper(".inner-page", {
+var swiper =  new Swiper(".sl-inner-page", {
     slidesPerView: 1,
     loop: true,  
     spaceBetween: 30,
@@ -49,8 +49,6 @@ var swiper =  new Swiper(".inner-page", {
     },  
     speed: 3000,  
 });  
-
-
 
 var swiper =  new Swiper(".banner_26", {
     direction: "vertical",
@@ -866,12 +864,16 @@ function() {
 
 var swiper =  new Swiper(".sl-testimonial-6", {
     slidesPerView: 1,
-    // loop: true,  
+    loop: true,  
     // autoplay: {
     //     delay: 1, 
     // }, 
     speed: 3000,
     spaceBetween: 32,
+    navigation: {
+        nextEl: ".next-testimonials",
+        prevEl: ".prev-testimonials",
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,

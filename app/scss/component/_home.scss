@@ -7280,7 +7280,7 @@
             max-width: 1650px;
         }
 
-        .swiper-container.inner-page {
+        .swiper-container.sl-inner-page {
             overflow: visible;
 
             .image {
@@ -8011,6 +8011,7 @@
 
         .flat-toggle {
             padding: 18px 30px 17px;
+            margin-bottom: 0;
         }
 
         &.style3 {
