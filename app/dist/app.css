@@ -24862,6 +24862,10 @@ body .fs-20 {
   background: #C8F27C;
 }
 
+.inner-page::-webkit-scrollbar-thumb {
+  background: #5EDDA0;
+}
+
 img {
   max-width: 100%;
   height: auto;
