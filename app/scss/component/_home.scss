@@ -7618,6 +7618,8 @@
         .image {
             position: relative;
             margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
 
             .link {
                 @include transition5;
