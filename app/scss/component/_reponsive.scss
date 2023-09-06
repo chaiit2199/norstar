@@ -231,6 +231,14 @@
 }
 
 @include res1200 {
+    .inner-page.page-contact .tf-contact .contact-box .wrap {
+        ul {
+            width: 100%;
+        }
+
+        display: block;
+    }
+
     .home-demo .flat-tabs .content-inner .wrap-box.row-4 .img-box {
         width: calc((100% - 40px) / 2);
     }

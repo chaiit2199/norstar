@@ -21908,6 +21908,12 @@ img.mfp-img {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .inner-page.page-contact .tf-contact .contact-box .wrap {
+    display: block;
+  }
+  .inner-page.page-contact .tf-contact .contact-box .wrap ul {
+    width: 100%;
+  }
   .home-demo .flat-tabs .content-inner .wrap-box.row-4 .img-box {
     width: calc((100% - 40px) / 2);
   }
