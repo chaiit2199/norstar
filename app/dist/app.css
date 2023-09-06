@@ -23007,6 +23007,12 @@ img.mfp-img {
   }
 }
 @media only screen and (max-width: 767px) {
+  .inner-page.project .flat-tabs .content-inner .row-4-style {
+    flex-wrap: wrap;
+  }
+  .inner-page.project .flat-tabs .content-inner .row-4-style .project-box {
+    width: 100%;
+  }
   .home-demo .flat-tabs .content-inner .wrap-box.row-4 .img-box {
     width: 100%;
   }

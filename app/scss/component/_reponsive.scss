@@ -1759,6 +1759,14 @@
 }
 
 @include res767 {
+    .inner-page.project .flat-tabs .content-inner .row-4-style {
+        flex-wrap: wrap;
+
+        .project-box {
+            width: 100%;
+        }
+    }
+
     .home-demo .flat-tabs .content-inner .wrap-box.row-4 .img-box {
         width: 100%;
     }
